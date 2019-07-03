@@ -1,0 +1,18 @@
+<project name="master" default="package">
+
+	<property name="lilypond" location="/Applications/LilyPond.app/Contents/Resources/bin/lilypond"/>
+
+	<target name="clean" description="Cleans old builds">
+		<delete dir="target" verbose="true"/>
+	</target>
+
+	<target name="package">
+		<copy	todir="target" filtering="true" flatten="true">
+			<fileset dir="src"/>
+		</copy>
+		<exec executable="${lilypond}" dir="target" outputproperty="lilypond.out" failifexecutionfails="false">
+			<arg line="file.ly"/>
+		</exec>
+	</target>
+
+</project>
