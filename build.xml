@@ -2,6 +2,10 @@
 
 	<property name="lilypond" location="/Applications/LilyPond.app/Contents/Resources/bin/lilypond"/>
 
+	<patternset id="musicFiles">
+		<include name="*.ly"/>
+	</patternset>
+
 	<target name="clean" description="Cleans old builds">
 		<delete dir="target" verbose="true"/>
 	</target>
@@ -11,9 +15,12 @@
 		<copy	todir="target" filtering="true" flatten="true">
 			<fileset dir="src"/>
 		</copy>
-		<exec executable="${lilypond}" dir="target" outputproperty="lilypond.out" failifexecutionfails="false" errorproperty="lilypond.err">
-			<arg line="--pdf file.ly"/>
-		</exec>
+		<apply executable="${lilypond}" dir="target" outputproperty="lilypond.out" failifexecutionfails="false" errorproperty="lilypond.err">
+			<arg line="--pdf file"/>
+			<fileset dir="target">
+				<patternset refid="musicFiles"/>
+			</fileset>
+		</apply>
 		<echo>${lilypond.err}</echo>
 	</target>
 
