@@ -87,6 +87,38 @@
 	fis4. eis4.
 	dis2.
 
+	%page 3
+	r2 ais4
+	dis2 cis4
+	ais2 r8 ais8
+	gis4 ais8 cis4 bis8
+	ais2 r8 gis8
+	ais2.
+	
+	r4 fis8 fis4 eis8
+	fis2.
+	r2 ais4
+	dis2 cis4
+	ais2 r8 ais8
+	gis4 ais8 cis4 bis8
+	ais4 fis'8 eis8 dis8 cis8
+	dis4. eis4.
+	fis4. gis4.
+	ais4. gis4.
+	eis8 fis8 eis8 dis8 cis8 ais8
+	dis2\mf\< cis4
+	ais2 r8 ais8
+	gis8. ais8. cis8. dis8.
+	dis2\f\fermata dis4
+	cis4. ais4.
+	r8 fis'8.[ eis16] dis4.
+	gis2.\mf
+	ais2.
+	gis2.\<
+	ais2 dis,4
+	cis4.\f eis4.
+
+	%page 4
 
 }
 
@@ -101,7 +133,6 @@
 	The | ad- miral | fell at | The ra mo - | orc be - | cause | she left his | side. |
 
 	%page 2
-	
 	Why | this? Why _ | this? Oh, | daugh- ter of the sea? | Why |
 	this? Did you for- | get your sea- side days? | | Al -- | ways the | pri- de |
 	of our na- tions eyes. | How | could | _ she go a- stray? |
@@ -109,7 +140,10 @@
 	_ _ | _ | When | she did | flee a- | cross the o- cean | deep the | ad- miral | fol- lowed | west.
 
 	%page 3
-
+	What | else but | sail to | save a daugh- ers | life and | pray |
+	she still drew | breath? | But | there he | found u- | pon those dis- tant | shores _ _ _ _ |
+	e- nemies | 'pon the | rise! _ | _ _ _ _ _ But | when he | faced those | sa- a- a- vage | 
+	foes his | daugh- ter | stood a-side | _ | _ | _ | _ _ And | bu- ried | 
 }
 
 \version "2.18.2"
