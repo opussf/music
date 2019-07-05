@@ -77,7 +77,7 @@
 	fis'2 eis4
 	dis2.
 	r2.
-	
+
 	r2 ais4
 	dis2 cis4
 	ais2 r8 ais8
@@ -94,7 +94,7 @@
 	gis4 ais8 cis4 bis8
 	ais2 r8 gis8
 	ais2.
-	
+
 	r4 fis8 fis4 eis8
 	fis2.
 	r2 ais4
@@ -119,7 +119,35 @@
 	cis4.\f eis4.
 
 	%page 4
-
+	gis4. eis4.
+	fis8[ eis8] fis8 ais,4.
+	dis4. ais4.
+	cis4. eis4.
+	gis4. eis4.
+	fis4. ais,4.
+	fis4. ais,4.
+	cis'4. eis4.
+	gis4. eis4.
+	fis8. gis8. fis8. eis8.
+	fis4. dis8 fis8[ gis8]
+	ais4.\< dis,4. 
+	fis4. eis4 dis8
+	dis2 fis,8 ais8
+	dis8 fis8 ais8 dis8 r4
+	dis,2.\ff
+	gis2( gis8) fis8
+	eis2.\fermata
+	r2.\p
+	r2.
+	r2.
+	r2 ais,4
+	dis2 cis4
+	ais2 r8 ais8
+	gis4 ais8 cis4 bis8
+	ais2 r8 ais8
+	dis4. eis4.
+	fis2 eis4
+	dis2.
 }
 
 \addlyrics {
@@ -142,8 +170,15 @@
 	%page 3
 	What | else but | sail to | save a daugh- ers | life and | pray |
 	she still drew | breath? | But | there he | found u- | pon those dis- tant | shores _ _ _ _ |
-	e- nemies | 'pon the | rise! _ | _ _ _ _ _ But | when he | faced those | sa- a- a- vage | 
-	foes his | daugh- ter | stood a-side | _ | _ | _ | _ _ And | bu- ried | 
+	e- nemies | 'pon the | rise! _ | _ _ _ _ _ But | when he | faced those | sa- a- a- vage |
+	foes his | daugh- ter | stood a-side | _ | _ | _ | _ _ And | bu- ried |
+
+	%page 4
+	deep be-- | neath the waves _ | _ _ | Betrayed by | fa-- mi | ly _ | _ _ | 
+	to his | na- tion | which his last breath | cried: Be ware the | daugh- ter | of the _ | sea! _ _ |
+	_ _ _ _ | _ | _ _ | _ |
+	I | heard I | heard a- | cross the moon- lit | sea the | old voice | war ning | me.
+
 }
 
 \version "2.18.2"
