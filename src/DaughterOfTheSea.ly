@@ -148,6 +148,21 @@
 	dis4. eis4.
 	fis2 eis4
 	dis2.
+
+	%page 5
+	r2 ais4 
+	dis2 cis4
+	ais2 r8 ais8
+	gis4 ais8 cis4 bis8
+	ais2 fis8 gis8
+	ais2.\fermata
+
+	r4 fis8 fis4 eis8
+	dis2.
+	r2.
+	r2.
+	r2.
+	r2.
 }
 
 \addlyrics {
@@ -177,7 +192,10 @@
 	deep be-- | neath the waves _ | _ _ | Betrayed by | fa-- mi | ly _ | _ _ | 
 	to his | na- tion | which his last breath | cried: Be ware the | daugh- ter | of the _ | sea! _ _ |
 	_ _ _ _ | _ | _ _ | _ |
-	I | heard I | heard a- | cross the moon- lit | sea the | old voice | war ning | me.
+	I | heard I | heard a- | cross the moon- lit | sea the | old voice | war ning | me. |
+
+	%page 5
+	Be-- | ware, be-- | ware the | daugh ter of the | sea. Be _-- | ware | be- ware of | me. |
 
 }
 
