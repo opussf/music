@@ -3,7 +3,7 @@
 	composer = "L. Morris"
 }
 
-\relative c' {
+melody = \relative c' {
 	\clef treble
 	\key f \major
 	\time 4/4
@@ -14,6 +14,12 @@
 	c bes
 	c a	c a
 	c g' f e f d
+}
+
+\score {
+	\melody
+	\layout { }
+	\midi { }
 }
 
 \version "2.18.2"
