@@ -1,5 +1,6 @@
 \header {
-	title = "Song"
+	title = "Bizirk Irauteko Arau Luzea"
+	subtitle = "(working title)"
 	composer = "L. Morris"
 }
 
