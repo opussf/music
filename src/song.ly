@@ -7,17 +7,29 @@ melody = \relative c' {
 	\clef treble
 	\key f \major
 	\time 4/4
+	\tempo "" 4=160
 
+
+	% comment
 	a' f a f
-	c' bes8 a8 c4 g4 bes4~
-	g4 bes g4 d'
-	c bes
-	c a	c a
-	c g' f e f d
+	c' bes8 a8 bes4 g4
+	bes4 g4 bes g4
+	d' c8 bes c4
+
+	a c a c
+	a g' f8 e f4 d
+
+
+
+
 }
 
 \score {
-	\melody
+
+	\new Staff {
+		\set Staff.midiInstrument = #"flute"
+		\melody
+	}
 	\layout { }
 	\midi { }
 }
