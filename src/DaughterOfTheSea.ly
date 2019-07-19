@@ -68,7 +68,7 @@
 	gis8. ais16 cis8. bis16 ais4(
 	ais4) r2
 	r2 ais4
-	gis2( aie8.) fis16
+	gis2( ais8.) fis16
 	eis4. gis4.
 	ais8. gis16 fis8. gis16 ais4(
 	ais4) r4 ais4
@@ -130,7 +130,7 @@
 	gis4. eis4.
 	fis8. gis8. fis8. eis8.
 	fis4. dis8 fis8[ gis8]
-	ais4.\< dis,4. 
+	ais4.\< dis,4.
 	fis4. eis4 dis8
 	dis2 fis,8 ais8
 	dis8 fis8 ais8 dis8 r4
@@ -150,7 +150,7 @@
 	dis2.
 
 	%page 5
-	r2 ais4 
+	r2 ais4
 	dis2 cis4
 	ais2 r8 ais8
 	gis4 ais8 cis4 bis8
@@ -166,7 +166,7 @@
 }
 
 \addlyrics {
-	| _ | _ _ | _ | _ _ _ _ | _ |
+	 _ | _ _ | _ | _ _ _ _ | _ |
 	Be -- | ware be -- | ware the | daugh -- ter of the | sea. Be -- |
 	ware I | heard him | cry. |
 	His | voice car -- | ried u -- | pon the o -- cean | breeze as he | sank |
@@ -189,7 +189,7 @@
 	foes his | daugh- ter | stood a-side | _ | _ | _ | _ _ And | bu- ried |
 
 	%page 4
-	deep be-- | neath the waves _ | _ _ | Betrayed by | fa-- mi | ly _ | _ _ | 
+	deep be-- | neath the waves _ | _ _ | Betrayed by | fa-- mi | ly _ | _ _ |
 	to his | na- tion | which his last breath | cried: Be ware the | daugh- ter | of the _ | sea! _ _ |
 	_ _ _ _ | _ | _ _ | _ |
 	I | heard I | heard a- | cross the moon- lit | sea the | old voice | war ning | me. |
