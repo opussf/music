@@ -6,10 +6,12 @@
 }
 
 flute = \new Staff {
+	\set Staff.midiInstrument = #"flute"
 	\relative c' {
 		\clef treble
 		\key c \major
 		\time 3/4
+		\tempo "" 4 = 90
 
 		\partial 4
 		c8 d
@@ -58,8 +60,9 @@ flute = \new Staff {
 }
 
 guitar = \chordmode {
+
 	\partial 2.
-	r4 
+	r4
 	\repeat volta 2 {
 		c2. c2.
 		c2.:7
@@ -67,9 +70,9 @@ guitar = \chordmode {
 		f2.  c c g:7 g:7
 		c c c:7 f
 		c c4 g2:7 c2. c2. c2. e:7
-		f c c c g:7 g:7 
+		f c c c g:7 g:7
 		c c c:7 f
-		c c4 g2:7 
+		c c4 g2:7
 	}
 	\alternative {
 		{ c2. c2. }
@@ -80,16 +83,20 @@ guitar = \chordmode {
 
 \score {
 	<<
-		\context ChordNames { 
+		\context ChordNames {
 			\set chordChanges = ##t
-			\guitar 
+			\set Staff.midiInstrument = #"acoustic guitar (nylon)"
+			\guitar
 		}
-		\context FretBoards { 
+		\context FretBoards {
 			\set chordChanges = ##t
-			\guitar 
+			\guitar
 		}
 
 		\flute
 	>>
+	\layout { }
+	\midi { }
 }
+\version "2.18.2"
 
