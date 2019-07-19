@@ -1,2 +1,3 @@
 .DS_Store
 target/*.ly
+target/*.err
