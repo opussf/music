@@ -57,7 +57,39 @@ flute = \new Staff {
 	}
 }
 
+guitar = \chordmode {
+	\partial 2.
+	r4 
+	\repeat volta 2 {
+		c2. c2.
+		c2.:7
+
+		f2.  c c g:7 g:7
+		c c c:7 f
+		c c4 g2:7 c2. c2. c2. e:7
+		f c c c g:7 g:7 
+		c c c:7 f
+		c c4 g2:7 
+	}
+	\alternative {
+		{ c2. c2. }
+		{ c2. c2. }
+	}
+}
+
+
 \score {
-	\flute
+	<<
+		\context ChordNames { 
+			\set chordChanges = ##t
+			\guitar 
+		}
+		\context FretBoards { 
+			\set chordChanges = ##t
+			\guitar 
+		}
+
+		\flute
+	>>
 }
 
