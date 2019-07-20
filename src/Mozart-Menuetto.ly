@@ -7,7 +7,7 @@
 }
 
 partA = \relative c' {
-	d'4\f | g a b c2 a4 b g a g8( fis) e( d e f) g4 a b |
+	d'4\f | g a b c2 a4 b g a g8( fis) e( d e fis) g4 a b |
 	c b16( a g a) b4 a16( g fis g) a4 fis g r4
 }
 partB = \relative c' {
