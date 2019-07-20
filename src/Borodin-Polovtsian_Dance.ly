@@ -16,7 +16,7 @@ flute = \new Staff {
 		\key f \major
 		\tempo "Andantion" 4 = 84
 
-		r1
+		R1
 		g''8(\p a bes4) \tuplet 3/2 { d8( c bes } a4)
 		bes8( a16 g16 f4) r2
 		d8( e f4) \tuplet 3/2 { a8( g f } e4)
