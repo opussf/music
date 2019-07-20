@@ -10,7 +10,6 @@ melody = \relative c' {
 	\time 4/4
 	\tempo "" 4=160
 
-
 	% comment
 	a' f a f
 	c' bes8 a8 bes4 g4
@@ -20,7 +19,7 @@ melody = \relative c' {
 	a c a c
 	a g' f8 e f4 d
 
-
+	bes8 b 4ges e8 ees
 
 
 }
