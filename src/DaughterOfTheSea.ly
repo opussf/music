@@ -18,7 +18,7 @@
 	ais2 r4
 	gis8 ais4 cis4 bis8
 	ais2 r4
-	r2.
+	R2.
 	% end of intro
 
 	r2 \p ais,4
@@ -59,7 +59,7 @@
 	dis2.\<
 
 	%page 2
-	r2. r2.
+	R2. R2.
 	r2\f ais'4
 	gis2 gis8 fis8
 	eis2 gis4
@@ -76,7 +76,7 @@
 	eis8. fis16 fis8. eis16 dis4
 	fis'2 eis4
 	dis2.
-	r2.
+	R2.
 
 	r2 ais4
 	dis2 cis4
@@ -137,9 +137,9 @@
 	dis,2.\ff
 	gis2( gis8) fis8
 	eis2.\fermata
-	r2.\p
-	r2.
-	r2.
+	R2.\p
+	R2.
+	R2.
 	r2 ais,4
 	dis2 cis4
 	ais2 r8 ais8
@@ -159,43 +159,47 @@
 
 	r4 fis8 fis4 eis8
 	dis2.
-	r2.
-	r2.
-	r2.
-	r2.
+	R2.
+	R2.
+	R2.
+	R2.
 }
 
 \addlyrics {
-	 _ | _ _ | _ | _ _ _ _ | _ |
-	Be -- | ware be -- | ware the | daugh -- ter of the | sea. Be -- |
-	ware I | heard him | cry. |
-	His | voice car -- | ried u -- | pon the o -- cean | breeze as he | sank |
-	be -- neath the | tide. |
-	Those | blood- soaked | shores of | Ka- -- lim do - | or where | sail - |
-	fought and | died. |
-	The | ad- miral | fell at | The ra mo - | orc be - | cause | she left his | side. |
+  _ | _ _ | _ | _ _ _ _ | _
+	Be-- | ware be-- | ware the | daugh-- ter of the | sea. Be-- |
+	ware I | heard him | cry.
+	His | voice car-- | ried u-- | pon the o-- cean | breeze as he | sank
+	be-- neath the | tide.
+	Those | blood-- soaked | shores of | Ka-- lim do - | or where | sail - |
+	fought and | died.
+	The | ad- miral | fell at | The ra mo - | orc be - | cause she left his | side.
 
 	%page 2
-	Why | this? Why _ | this? Oh, | daugh- ter of the sea? | Why |
-	this? Did you for- | get your sea- side days? | | Al -- | ways the | pri- de |
-	of our na- tions eyes. | How | could | _ she go a- stray? |
+	Why | this? Why _ | this? Oh, | daugh- ter of the sea?
+  Why this? Did you for-- | get your sea- side days?
+  Al-- | ways the | pri-- de |
+	of our na- tions eyes. How could _ she go a-- stray? |
 
-	_ _ | _ | When | she did | flee a- | cross the o- cean | deep the | ad- miral | fol- lowed | west.
+	_ _ | _
+  When she did | flee a- | cross the o- cean | deep the | ad- miral | fol- lowed | west.
 
 	%page 3
-	What | else but | sail to | save a daugh- ers | life and | pray |
-	she still drew | breath? | But | there he | found u- | pon those dis- tant | shores _ _ _ _ |
-	e- nemies | 'pon the | rise! _ | _ _ _ _ _ But | when he | faced those | sa- a- a- vage |
-	foes his | daugh- ter | stood a-side | _ | _ | _ | _ _ And | bu- ried |
+	What | else but | sail to | save a daugh- ers | life and | pray
+	she still drew | breath?
+  But there he | found u- | pon those dis- tant | shores _ _ _ _ |
+	e- nemies | 'pon the | rise! _ | _ _ _ _ _
+  But when he | faced those | sa- a- a- vage | foes his | daugh- ter stood a-side
+  _ | _ | _ | _ _ And | bu- ried |
 
 	%page 4
 	deep be-- | neath the waves _ | _ _ | Betrayed by | fa-- mi | ly _ | _ _ |
 	to his | na- tion | which his last breath | cried: Be ware the | daugh- ter | of the _ | sea! _ _ |
-	_ _ _ _ | _ | _ _ | _ |
-	I | heard I | heard a- | cross the moon- lit | sea the | old voice | war ning | me. |
+	_ _ _ _ | _ | _ _ | _
+	I | heard I | heard a- | cross the moon- lit | sea the | old voice | war ning | me.
 
 	%page 5
-	Be-- | ware, be-- | ware the | daugh ter of the | sea. Be _-- | ware | be- ware of | me. |
+	Be-- | ware, be-- | ware the | daugh ter of the | sea. Be-- _ ware be-- ware of me.
 
 }
 
