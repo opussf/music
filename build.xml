@@ -25,7 +25,7 @@
 		<echo file="target/lilypond.err">${lilypond.err}</echo>
 	</target>
 
-	<target name="deploy" depends="package">
+	<target name="deploy" depends="package" description="copy pdf and midi files to ${deployDir}">
 		<copy	todir="${deployDir}" preservelastmodified="true">
 			<fileset dir="target">
 				<include name="*.pdf"/>
