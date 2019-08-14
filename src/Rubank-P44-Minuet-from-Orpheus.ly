@@ -29,7 +29,7 @@ flute_b = \new Staff {
 		\key f \major
 
 		\repeat volta 2 {
-			c'4(\mf\< a8 bes c f) f4(\> e d) c\! d8( c bes c) b4( a g) f'8 r a, r d r c4 g( a) d8( g) f4 e8( f) c2.
+			c'4(\mf\< a8 bes c f) f4(\> e d) c\! d8( c bes c) bes4( a g) f'8 r a, r d r c4 g( a) d8( g) f4 e8( f) c2.
 		}
 		a'4\mp f8( g a bes) a4( g f) e\< f8( e d c) \acciaccatura c\> b4.( a8 g4) c8(\p\< d e f e f) e4(\> d c) b8(\< d f g f g)
 		f4(\> e d) g2\< a4 g2 e4 e8(\f f) e( g f b) c4 c,8(\> bes? a g) c4\! a8( bes c f)
