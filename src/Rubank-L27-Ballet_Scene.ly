@@ -21,13 +21,13 @@ flute_a = \new Staff {
 }
 
 flute_b = {
-	\key f \major
+	\set Staff.midiInstrument = #"flute"
 	\relative c' {
+		\key f \major
 		f'2 c4 | a2 a4 | c8 c c4. c8 | dis2( e4) | g2 e4 | g,2 bes4 | e4 dis4. e8 | f2 f4-- |
 		a a4. bes8 | d,4. c8 bes4 | g'4 g2 | c,4. c8 c4 | bes4. d8 f4 | a,4. c8 f4 | d f c | e2 r4 |
 		c e c | g' e bes | f'2 f4 | a f c | bes'2 bes4 | a2 a4 | e8 e f2 | e r4 |
 		f2 c4 | a2 a4 | c e2 | a g4 | bes4. g8 d4 | a'4. f8 c4 | d8 d c4 bes | a2. |
-
 	}
 }
 

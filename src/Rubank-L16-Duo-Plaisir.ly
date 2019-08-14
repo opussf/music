@@ -20,6 +20,7 @@ flute_a = \new Staff {
 }
 
 flute_b = {
+	\set Staff.midiInstrument = #"flute"
 	\relative c' {
 		\key f \major
 		c'4 f2 a a,2. e'4 f8( e) d( c) bes4( d) f2. f4 e2 e
