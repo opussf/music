@@ -1,7 +1,7 @@
 \header {
 	title = "Ballet Scene"
 	subtitle="Duet"
-	subsubtitle="Rubank Elementary  Lesson 20"
+	subsubtitle="Rubank Elementary  Lesson 27"
 }
 
 flute_a = \new Staff {
