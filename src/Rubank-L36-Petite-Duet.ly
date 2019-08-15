@@ -21,7 +21,7 @@ flute_a = \new Staff {
 	}
 }
 
-flute_b = {
+flute_b = \new Staff {
 	\set Staff.midiInstument = #"flute"
 	\key g \major
 	\relative c' {

@@ -1,6 +1,6 @@
 \header {
-	title = "Minuet from Orpheus"
-	subsubtitle="Rubank Elementary  Page 44"
+	title = "Gavotte"
+	subsubtitle="Rubank Elementary  Page 45"
 	composer="GOSSEC"
 }
 
