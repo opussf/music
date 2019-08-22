@@ -29,17 +29,24 @@ upperMelody = \relative c'' {
 		{ d4-> d8-- e4-- gis8-- | a4-- a8-- a4.-- | }
 		{ d,4-> d8-- e4-- gis8-- | }
 	}
+	\break
 	a4-> a8-- a4-- a16-- c-- | e8.-- e e d |
 	c-- c-- e-- d-- | e-- e-- e-- d--
-	c-- a-- a-- a-- |
+	c-- c-- a-- a-- |
 	\clef bass
 	c,4-> b16-- c-- c4-> e16-- d-- |
-	d8.-> c-> b4-> g16-- b-- | c8.-> d-> a4-> c16-- e-- |
+	d8.-> c-- b4-> g16-- b-- | c8.-> b-> a4-> c16-- e-- |
 	b8.-> e-- e4-> \clef treble a16-- b-- |
 	%23
 	c4-> c8-- c4-> e16-- c-- | d8.-> c-- b-> d-- |
-	c-> c-- c-> b16-- a-- g-- | b4-> c16-- b-- a4-> a16-- c-- |
-	b8.-> e-- e4-> b8-- | f4-> g8-- g8.-> f16-- e-- d-- |
+	c-> c-- c-> b16-- a-- g-- |
+	%26
+	e4-> a8-- a4-> a16-- c-- | c4-> c8-- g'4-> d16-- c-- |
+	b4->~ b16-- c-- d8.-> c16-- b-- a-- | b4-> c16-- b-- a4-> a16-- c-- |
+	b8.-> e-- e4-> b8-- | e,4-> g8-- g8.-> f16-- e-- d-- |
+	%32
+	e8.-> a-- b4-> e8-- | c4-> a8-- c8.-> b16-- a-- g-- |
+
 
 
 }
@@ -59,7 +66,21 @@ upperOther = \relative c'' {
 		{ d[( a b a d a)] e'[( b c d gis b,)] | a'[( b, c e a e)] a[( b, c e c e)] | }
 		{ d[( a b a d a)] e'[( b c d gis b,)] | }
 	}
-	a'[( b, c e a e)] a[( b, c e a c)] | e[( e, a e' e, a)] e'[( e, a d e, a)] |
+	a'[( b, c e a e)] a[( b, c e) a c] | e[ e, a e' e, a] e'[ e, a d e, a] |
+	c[ e, a c e, a] e'[ e, a d e, a] | e'[ e, a e' e, a] e'[ e, a d e, a] |
+	c[ e, a c e, a] a[ d, fis a d, fis] |
+	\clef bass
+	c[( e, g e) b' c] c[( e, g c) e d] |
+	d[( d, g c d, g)] b[( d, g d g b)] | c[( e, a b e, e')] a,[( c e, a c e)] |
+	b[( e, b' e e, b')] e[( e, b' e)] \clef treble a-- b-- |
+	%23
+	c[( e, f a c e,)] c'[( e, f a e' c)] | d[( e, f c' e, f)] b[( e, f d' e, f)] |
+	c'[( d, e c' d, e)] c'[( d, e) b'-- a-- g--] |
+	%26
+	e[( a, c d a' d,)] a'[( c, d e a c)] | c[( d, e g c g)] g'[( e c g) d' c] |
+	b[( d, g d g c)] d[( d, g) c-- b-- a--] |
+
+
 }
 
 upper = {
