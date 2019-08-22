@@ -3,7 +3,10 @@
 	subtitle = "(The Promise / The Sacrifice)"
 	subsubtitle = "(From the film 'The Piano')"
 	composer = "By Michael Nyman"
-	copyright = \markup { \char ##x00A9 " Copyright 1993 by Michael Nyman " }
+	copyright = \markup \left-align \center-column {
+		\line { \char ##x00A9 " Copyright 1993 by Michael Nyman Limited/Chester Music Limited, 8/9 Frith Street, London W1" }
+		\line { "All rights Reserved International Copyright Secured" }
+	}
   	source = "urtext"
 }
 
@@ -27,7 +30,18 @@ upperMelody = \relative c'' {
 		{ d,4-> d8-- e4-- gis8-- | }
 	}
 	a4-> a8-- a4-- a16-- c-- | e8.-- e e d |
-	c-- c-- e-- d--
+	c-- c-- e-- d-- | e-- e-- e-- d--
+	c-- a-- a-- a-- |
+	\clef bass
+	c,4-> b16-- c-- c4-> e16-- d-- |
+	d8.-> c-> b4-> g16-- b-- | c8.-> d-> a4-> c16-- e-- |
+	b8.-> e-- e4-> \clef treble a16-- b-- |
+	%23
+	c4-> c8-- c4-> e16-- c-- | d8.-> c-- b-> d-- |
+	c-> c-- c-> b16-- a-- g-- | b4-> c16-- b-- a4-> a16-- c-- |
+	b8.-> e-- e4-> b8-- | f4-> g8-- g8.-> f16-- e-- d-- |
+
+
 }
 upperOther = \relative c'' {
 	\stemDown
@@ -45,6 +59,7 @@ upperOther = \relative c'' {
 		{ d[( a b a d a)] e'[( b c d gis b,)] | a'[( b, c e a e)] a[( b, c e c e)] | }
 		{ d[( a b a d a)] e'[( b c d gis b,)] | }
 	}
+	a'[( b, c e a e)] a[( b, c e a c)] | e[( e, a e' e, a)] e'[( e, a d e, a)] |
 }
 
 upper = {
@@ -83,13 +98,13 @@ lowerOther = \relative c' {
 		a,[( e' a e a e)] a,[( e' a e a e)] | a,[( e' a e a e)] a,[( e' a e a e)] |
 		f,[( c' f c f c)] f,[( c' f c f c)] | f,[( c' f c f c)] g[( d' g d g d)] |
 		\time 9/8
-		a[( e' a e a e)] a,[( e' a e a, e)] a[( e' a e a e)] |
+		a[( e' a e a e)] a,[( e' a e a, e')] a,[( e' a e a e)] |
 		\time 6/8
-		a,[( e' a e a, e')] a,[( e' a e a e)] |
+		a,[( c e c a e')] a,[( c e c a e')] |
 	}
 	\alternative {
-		{ a4. a | a a | }
-		{ a a | }
+		{ e,[( b' e d b e,)] e[( b' e d b e,)] | a[( e' a e a e)] a,[( e' a e a e)] | }
+		{ e,[( b' e d b e,)] e[( b' e d b e,)] | }
 	}
 }
 lower = {
