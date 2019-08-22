@@ -60,9 +60,15 @@ flute_c = \new Staff {
 		\flute_b
 		\flute_c
 	>>
-
-
 	\layout { }
+}
+\score {
+	\unfoldRepeats
+	<<
+		\flute_a
+		\flute_b
+		\flute_c
+	>>
 	\midi { }
 }
 \version "2.18.2"

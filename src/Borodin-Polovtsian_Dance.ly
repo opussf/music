@@ -6,10 +6,6 @@
 	copyright = \markup { \char ##x00A9 " Copyright 1965 by Rubank, Inc. \n Internation Copyright Secured   All Rights Reserved" }
 }
 
-
-
-
-
 flute = \new Staff {
 	\set Staff.midiInstrument = #"flute"
 	\relative c' {
