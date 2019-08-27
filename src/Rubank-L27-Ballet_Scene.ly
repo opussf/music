@@ -10,9 +10,9 @@ flute_a = \new Staff {
 		\clef treble
 		\key f \major
 		\time 3/4
-		\tempo "" 4 = 110
+		\tempo "Waltz tempo" 4 = 110
 
-		a''2 f4 c2 c4 f8 f e4. f8 fis2( g4) bes2 g4 c,2 c4 g' fis4. g8 gis2( a4)
+		a''2\mf f4 c2 c4 f8 f e4. f8 fis2( g4) bes2 g4 c,2 c4 g' fis4. g8 gis2( a4)
 		c c4. d8 bes4. a8 g4 bes bes4. c8 a4. g8 f4 d4. f8 d'4 c,4. f8 c'4 bes8 bes a4 f g2 c,8 c
 		g'4. fis8 g a bes4 g c, a'4. gis8 a bes c4 a f d'4. cis8 d f c4. b8 c f bes, bes a4. f8 g2 r4
 		a2 f4 c2 c4 f8 f g4. a8 c2 bes4 d4. bes8 g4 c4. a8 f4 bes8 bes a4 g f2.
