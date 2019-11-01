@@ -1,5 +1,4 @@
 \version "2.18.2"
-% http://lilypond.org/doc/v2.18/Documentation/notation/multiple-voices#writing-music-in-parallel
 \header {
 	title = "The Cinnamon Bear"
 	composer = \markup {
@@ -23,7 +22,7 @@ flute = \new Staff {
 			\clef treble
 			\key g \major
 			\time 6/8
-			\tempo "" 8 = 110
+			\tempo "" 8 = 120
 
 			R2.*5 \bar "||"
 			\partial 4
@@ -88,12 +87,20 @@ pianotop = \relative c' {
 	\key g \major
 	<g' d' g>2. | <e g c e>4 c'8 <fis, b d>4 b8 | <e, a c>4 a8 <d, g b>4 g8 |
 	<c, e a>4 fis8 <b, d g>4 e8 | d2.\fermata
+
+
 }
 pianobottom = \relative c' {
 	\clef "bass"
 	\key g \major
 	b,2. | c4 r8 d4 r8 | e4 r8 g4 r8 |
 	a4 r8 b4 r8 | d,2.\fermata
+
+	\partial 4
+	r4
+	<g, d'>4. <c g'>4. | <b g'>4. <a g'>4 <g d' c'>8 |
+	<b g' d'>4. <bes g' cis>4. | <a e' c'!>4. <dis c'>4. |
+	<a e'>4. <b a'>4. |  |
 
 }
 
