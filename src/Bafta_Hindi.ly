@@ -7,6 +7,7 @@
 
 flute = \new Staff {
 	\set Staff.midiInstrument = #"flute"
+	\override Score.MetronomeMark.padding = #3
 	\new Voice = "melody"  {
 		\relative c'' {
 			\clef treble
@@ -22,6 +23,12 @@ flute = \new Staff {
 		}
 	}
 }
+guitar = \chordmode {
+	c:m2 c:m/g | c:m c:m/g | c:m d:dim | g:7 c:m |
+	c:m d:dim | g:7 c:m | c:m d:dim | g:7 c:m |
+	c:m d:dim | g:7 c:m | c:m d:dim | g:7 c:m |
+
+}
 words = \lyricmode {
 	Baf-- ta hin-- di | baf-- ta hin-- di | shash 'a-- ree-- eed | ya ba-- nat |
 	ef-- ta-- hoo-- li | ya sa-- ba-- ya | wal-- la khosh-- sh | mnel shib-- bak |
@@ -30,6 +37,11 @@ words = \lyricmode {
 
 \score {
 	<<
+		\context ChordNames {
+			\set chordChanges = ##t
+			\set Staff.midiInstrument = #"acoustic guitar (nylon)"
+			\guitar
+		}
 		\flute
 		\context Lyrics {
 			\lyricsto "melody" {
@@ -41,8 +53,8 @@ words = \lyricmode {
 }
 \score {
 	<<
+		\guitar
 		\flute
 	>>
 	\midi { }
 }
-
