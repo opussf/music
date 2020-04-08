@@ -1,3 +1,4 @@
+\version "2.18.2"
 \header {
 	title = "Petite Duet"
 	subsubtitle="Rubank Elementary  Lesson 36"
@@ -22,7 +23,7 @@ flute_a = \new Staff {
 }
 
 flute_b = \new Staff {
-	\set Staff.midiInstument = #"flute"
+	\set Staff.midiInstrument = #"flute"
 	\key g \major
 	\relative c' {
 		b'4.~ b4 b8 c4 d8 c4. c4.~ c4 c8 b4 d8 d4 b8 |
@@ -40,7 +41,13 @@ flute_b = \new Staff {
 		\flute_b
 	>>
 	\layout { }
+}
+\score {
+	<<
+		\flute_a
+		\flute_b
+	>>
 	\midi { }
 }
-\version "2.18.2"
+
 
