@@ -17,7 +17,6 @@ flute = \new Staff {
 			\key bes \major
 			\time 3/4
 			\tempo "Allegro animato" 4 = 156
-			\override Score.BarNumber.break-visibility = ##(#t #t #t)
 
 			g'4\mf( d' c) | f,( c' bes) | ees,( bes' a) | d,( a' g) |
 			c,\p\< c8( d) ees4 | g g8( a) bes4 | aes8( bes) c4 bes8( c) | d2.->\f\> |
