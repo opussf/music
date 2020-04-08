@@ -28,7 +28,7 @@ flute = \new Staff {
 
 			aes8 ees des aes'16 g aes8 ees des aes'16 g |
 			g16 aes8. ees8 aes, ges'4. aes16 g | aes8 ees des aes'16 g aes8 ees des aes'16 g |
-			aes8 ees16 d ees8 des'16 c des8 bes16 a bes8 aes16 g |
+			aes8 ees16 d ees8 des'!16 c des8 bes16 a bes8 aes16 g |
 
 			% end of sample from musicnotes.com
 
