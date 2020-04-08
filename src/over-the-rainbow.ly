@@ -223,4 +223,4 @@ C     B7    Em    C        G
 
 Oooo, oooo, oooo, oooo...
 
-%)
+%}
