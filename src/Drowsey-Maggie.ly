@@ -15,7 +15,7 @@ flute_a = \new Staff {
 
 		\repeat volta 2 {
 			e,4 b'8 e, d' e, b' e, | e4 b'8 e, a fis d fis | e4 b'8 e, d' e, b' e, | b' a b cis d b a fis |
-			e4  b'voltavolta8 e, d' e, b' e, | e4 b'8 e, a fis d fis | e4 b'8 e, d' e, b' e, | b' a b cis d a fis a |
+			e4  b'8 e, d' e, b' e, | e4 b'8 e, a fis d fis | e4 b'8 e, d' e, b' e, | b' a b cis d a fis a |
 		}
 		\break
 		\repeat volta 2 {
