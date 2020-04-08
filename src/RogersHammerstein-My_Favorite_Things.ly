@@ -18,7 +18,9 @@ flute = \new Staff {
 			\tempo "Allegro animato" 4 = 156
 
 			g'4\mf( d' c) | f,( c' bes) | ees,( bes' a) | d,( a' g) |
-			c,\p\< c8( d) ees4 | g g8( a) bes4 | aes8( bes) c4 bes8( ces) | d2.\f\> |
+			c,\p\< c8( d) ees4 | g g8( a) bes4 | aes8( bes) c4 bes8( ces) | d2.->\f\> |
+
+			g,4( d'-.) d-.
 
 
 			R1*2 | ees4.\pp( f8 aes g f ees | bes'4 \tuplet 3/2 { c8 g c } bes4) r8 bes( | c\< d ees4\!~ ees8 d c g |
