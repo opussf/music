@@ -14,14 +14,14 @@ flute = \new Staff {
 			\time 4/4
 			\tempo "" 4 = 65
 
-			cis4 a8 fis e2 | e'4 fis8 a fis2 | fis4 e8 cis a b e cis | b1 | \break
-			e4 fis8 a fis2 | b,8. cis16 a8 fis8 e2 | cis'4 a8 fis e fis cis'4 | fis,1 | \break
+			\repeat volta 2 {
 
-			cis'4 a8 fis e2 | e'4 fis8 a fis2 | fis4 e8 cis a b e cis | b1 | \break
-			e4 fis8 a fis2 | b,8. cis16 a8 fis8 e2 | cis'4 a8 fis e fis cis'4 | fis,1 | \break
+				cis4 a8 fis e2 | e'4 fis8 a fis2 | fis4 e8 cis a b e cis | b1 | \break
+				e4 fis8 a fis2 | b,8. cis16 a8 fis8 e2 | cis'4 a8 fis e fis cis'4 | fis,1 | \break
 
+			}
 
-			\bar "|."
+			%\bar "|."  % don't use bar when the repeat is at the end.
 		}
 	}
 }
@@ -33,6 +33,7 @@ flute = \new Staff {
 	\layout { }
 }
 \score {
+	\unfoldRepeats
 	<<
 		\flute
 	>>
