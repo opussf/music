@@ -19,7 +19,7 @@ flute = \new Staff {
 			\tempo "Allegro animato" 4 = 156
 
 			g'4\mf( d' c) | f,( c' bes) | ees,( bes' a) | d,( a' g) |
-			c,\p\< c8( d) ees4 | g g8( a) bes4 | aes8( bes) c4 bes8( c) | d2.->\f\> |
+			c,\p\< c8( d) ees4 | g g8( a) bes4 | aes8( bes) c4 bes8( c) | d2.->\f\> | \break
 
 			g,4\p( d'-.) d-. | \acciaccatura d8 a4( g-.) g-. | d( g-.) g-. | a( g2) |
 			g4( d'-.) d-. | \acciaccatura d8 a4( g-.) g-. | d( g-.) g-. | a( g2) |
