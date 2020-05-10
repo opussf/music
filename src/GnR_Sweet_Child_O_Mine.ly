@@ -1,3 +1,4 @@
+\version "2.20.0"
 \header {
 	title = "Sweet Child O' Mine"
 	composer = \markup {
@@ -21,7 +22,7 @@ upper = \relative c' {
 	d8 d' a d, g d fis d | d8 d' a d, g d fis d | d8 d' a d, g d fis d | d8 d' a d, g4 fis |
 	<d fis>2. <d fis>4 | <a d fis>1 |
 
-	<a fis>8 <a fis> <a fis> (<a fis> <a fis>4) g8 fis |
+	<a' fis>8 <a fis> <a fis> (<a fis> <a fis>4) g8 fis |
 	<g d>4 a8 (e8 e4) d4 |
 	<g e>8 fis d (<g e> <g e>4) <fis d>4 |
 }
