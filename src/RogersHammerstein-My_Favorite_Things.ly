@@ -41,8 +41,6 @@ flute = \new Staff {
 			%80
 			d2.->\ff\> | bes2.->~ | bes~ | bes2 r4 | c,4\p\< c8( d) ees4\!   % end of free sheet
 
-
-
 			\bar "|."
 		}
 	}
