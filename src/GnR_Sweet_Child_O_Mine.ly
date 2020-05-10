@@ -12,11 +12,14 @@
   	source = "urtext"
 }
 
-upperMelody = \relative c'' {
-	\key c \major
+upperMelody = \relative c' {
+	\key d \major
 	\time 4/4
 	\tempo 4. = 50
 
+	d8 d' a d, g d fis d | d8 d' a d, g d fis d | d8 d' a d, g d fis d | d8 d' a d, g d fis d |
+	d8 d' a d, g d fis d | d8 d' a d, g d fis d | d8 d' a d, g d fis d | d8 d' a d, g4 fis |
+	[ d2. fis2. ]
 
 
 }
