@@ -1,0 +1,51 @@
+Scales
+
+
+Major Scales
+
+
+			1	2	3	4	5	6	7	8
+C Major		C	D	E	F	G	A	B	C
+G Major		G	A	B	C	D	E	F#	G
+D Major		D	E	F#	G	A	B	C#	D
+A Major		A	B	C#	D	E	F#	G#	A
+E Major		E	F#	G#	A	B	C#	D#	E
+B Major		B	C#	D#	E	F#	G#	A#	B
+F# Major	F#	G#	A#	B	C#	D#	E#	F#
+C# Major	C#	D#	E#	F#	G#	A#	B#	C#
+
+
+F Major		F	G	A	Bb	C	D	E	F
+Bb Major	Bb	C	D	Eb	F	G	A	Bb
+Eb Major	Eb	F	G	Ab	Bb	C	D	Eb
+Ab Major	Ab	Bb	C	Db	Eb	F	G	Ab
+Db Major	Db	Eb	F	Gb	Ab	Bb	C	Db
+Gb Major	Gb	Ab	Bb	Cb	Db	Eb	F	Gb
+Cb Major	Cb	Db	Eb	Fb	Gb	Ab	Bb	Cb
+
+
+
+Chord Formula
+
+Major (C)	Play 1 - 3 - 5 scale degrees
+			C - E - G
+
+Minor (C)	Play 1 - 3 - 5 scale degrees, lower 3rd 1/2 step
+			C - Eb - G
+
+Augmented	Play 1 - 3 - 5 scale degrees, raise 5th 1/2 step
+	(Caug)	C - E - G#
+
+Major 7 	Play 1 - 3 - 5 - 7 scale degrees
+  (C maj7)	C - E - G - B
+
+Dominant 7	Play 1 - 3 - 5 - 7 scale degrees, lower 7th 1/2 step
+	(C7)	C - E - G - Bb
+
+Minor 7 	Play 1 - 3 - 5 - 7 scale degrees, lower 3rd and 7th 1/2 step
+	(Cm7)	C - Eb - G - Bb
+
+Diminished 7 Play 1 - 3 - 5 - 7 scale degrees, lower 3rd & 5th 1/2 step, lower 7th whole step
+	(C dim)	C - Eb - Gb - A
+
+Note: Any time a number is shown in the chord symbol, it refers to the scale degree.  For instance, a C7 b5 means the 5th (G) is lowered 1/2 step.
