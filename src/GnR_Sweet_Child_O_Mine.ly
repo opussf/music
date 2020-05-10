@@ -12,41 +12,30 @@
   	source = "urtext"
 }
 
-upperMelody = \relative c' {
+upper = \relative c' {
 	\key d \major
 	\time 4/4
-	\tempo 4. = 50
+	\tempo 4 = 120
 
 	d8 d' a d, g d fis d | d8 d' a d, g d fis d | d8 d' a d, g d fis d | d8 d' a d, g d fis d |
 	d8 d' a d, g d fis d | d8 d' a d, g d fis d | d8 d' a d, g d fis d | d8 d' a d, g4 fis |
-	[ d2. fis2. ]
+	<d fis>2. <d fis>4 | <a d fis>1 |
 
-
-}
-upperOther = \relative c'' {
-
-}
-
-upper = {
-	<<
-	\upperMelody
-	\\
-	\upperOther
-	>>
+	<a fis>8 <a fis> <a fis> (<a fis> <a fis>4) g8 fis |
+	<g d>4 a8 (e8 e4) d4 |
+	<g e>8 fis d (<g e> <g e>4) <fis d>4 |
 }
 
-lowerMelody = \relative c' {
+lower = \relative c' {
+	\clef bass
+	\key d \major
+	R1 | R1 | (<a d,>1 | <a d,>1) |
+	(<g c,> | <g c,>) | (<d g,> | <d g,>) | d,4. d8 d2 | d4. d8 d4 d |
 
-}
-lowerOther = \relative c' {
+	d4. d8 d2 |
+	d4. d8 d2 |
+	c4. c8 c2 |
 
-}
-lower = {
-	<<
-	\lowerMelody
-	\\
-	\lowerOther
-	>>
 }
 
 
