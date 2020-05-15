@@ -21,26 +21,55 @@ soprano = \relative c' {
 		{ c8 d bes2 }
 		{ c8 d bes2~ | bes2.~ | bes8 r8 r4 r4 }
 	}
+}
+
+words = \lyricmode {
+	- - - | - - - | - - - | - - - |
+	Янаг-гийн сайхан
 
 }
 
-upper = \relative c' {
+upper_one = \relative c' {
 	\key bes \major
 	\time 3/4
+
+	% Bar 1
+	d'8 bes <f d f>4. <g d>8 |
+}
+
+upper_two = \relative c' {
+	\key bes \major
+	\time 3/4
+
+	% Bar 1
+	f8( r8 | g2 )
 }
 
 lower = \relative c' {
 	\key bes \major
 	\time 3/4
+	\cleft bass
+
+	% Bar 1
+	bes8 f d g bes d |
 }
 
 \score {
 	<<
-		\new Staff \with { instrumentName = #"Soprano" } \soprano
+		<<
+			\new Staff \with { instrumentName = #"Soprano" } \soprano
+			\context Lyrics {
+				\lyricsto "melody" {
+					\words
+				}
+			}
+		>>
+
 		\new PianoStaff \with { instrumentName = #"Piano" }
 		<<
+			\new Staff = "upper_one" \upper_one
+			\new Staff = "upper_two" \upper_two
 
-			\new Staff = "upper" \upper
 			\new Staff = "lower" \lower
 		>>
 	>>
@@ -51,7 +80,8 @@ lower = \relative c' {
 	\new PianoStaff \with { instrumentName = #"Piano" }
 	<<
 		\new Staff = "soprano" \soprano
-		\new Staff = "upper" \upper
+		\new Staff = "upper_one" \upper_one
+		\new Staff = "upper_two" \upper_two
 		\new Staff = "lower" \lower
 	>>
 	\midi { }
