@@ -34,7 +34,8 @@ upper_one = \relative c' {
 	\time 3/4
 
 	% Bar 1
-	d'8 bes <f d f>4. <g d>8 |
+	\override Stem.neutral-direction = #up
+	d'8 bes <f d' f>4. <g d'>8 | <ees g>8 <d f> <g, d' g>2 |
 }
 
 upper_two = \relative c' {
@@ -42,16 +43,17 @@ upper_two = \relative c' {
 	\time 3/4
 
 	% Bar 1
+	\override Stem.neutral-direction = #down
 	f8( r8 | g2 )
 }
 
 lower = \relative c' {
 	\key bes \major
 	\time 3/4
-	\cleft bass
+	\clef bass
 
 	% Bar 1
-	bes8 f d g bes d |
+	bes,8 f' d g bes d |
 }
 
 \score {
@@ -67,9 +69,12 @@ lower = \relative c' {
 
 		\new PianoStaff \with { instrumentName = #"Piano" }
 		<<
-			\new Staff = "upper_one" \upper_one
-			\new Staff = "upper_two" \upper_two
-
+			\new Staff {
+				<<
+					\upper_one
+					\upper_two
+				>>
+			}
 			\new Staff = "lower" \lower
 		>>
 	>>
