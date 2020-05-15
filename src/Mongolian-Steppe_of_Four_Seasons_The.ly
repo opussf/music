@@ -1,8 +1,7 @@
 \version "2.20.0"
 \header {
-	title = "Biigd Nairamdakh Mongol"
-	composer = "B. Damdinsuren / L. Murorj"
-  	source = "urtext"
+	title = "Дөрвөн цагийн тал"
+	composer = "Л. Мөрдорж"
 }
 
 soprano = \relative c' {
@@ -26,11 +25,13 @@ soprano = \relative c' {
 }
 
 upper = \relative c' {
-
+	\key bes \major
+	\time 3/4
 }
 
 lower = \relative c' {
-
+	\key bes \major
+	\time 3/4
 }
 
 \score {
