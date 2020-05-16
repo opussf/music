@@ -29,6 +29,33 @@ upper_one = \relative c'' {
 	\break
 	% Bar 14
 	d4 r4 r2 | R1\mf | r16 e16 f e a e f e a e f e a e f e |
+
+	% Page 2
+	\break
+	% Bar 17
+	r16 d16 f d a' d, f d bes' d, f d a' d, f d |
+	r8. c16 c'16 c, a' c, r16 cis a' cis, cis' cis, a' cis, |
+
+	\break
+	% Bar 19
+	d16 e f e a e f e r e f e a e f e | r16 a g a c a g a c d a c g a d, a' |
+
+	\break
+	% Bar 21
+	r16 d a bes g a d, a' r16 a g a f a d, a' |
+	r16 a g a e a g d' a d <a e'> <d g> <e a>8-> r8 |
+	r16 e, f e a e f e a e f e a e f e |
+
+	\break
+	% Bar 24
+	\stemUp
+	<f a bes d f>2.--\arpeggio  <d d'>8 <f f'> |
+	g'16 f g8~ g2 <f, f'>8 <g g'> |
+
+	\break
+	% Bar 26
+	<a a'>2~ <a a'>8 <f f'> <g g'> <c c'> |
+	a'16 g a4.~ a8 <f, f'> <g g'> <a a'> |
 }
 
 
@@ -48,6 +75,10 @@ upper_two = \relative c' {
 
 	% Bar 14
 	s1 | s1 | s1 |
+
+	% Page 2
+	% Bar 17
+	s1 | s4 c'4-> s4 cis4-> |
 
 }
 
@@ -133,18 +164,19 @@ lower_three = \relative c' {
 		>>
 	>>
 	\layout { }
-}
-\score {
-	\unfoldRepeats
-	\new PianoStaff \with { instrumentName = "Piano" } {
-		<<
-			\new Staff = "upper_one" \upper_one
-			\new Staff = "upper_two" \upper_two
-			\new Staff = "lower_one" \lower_one
-			\new Staff = "lower_two" \lower_two
-			\new Staff = "lower_three" \lower_three
-		>>
-	}
 	\midi { }
 }
+% \score {
+%	\unfoldRepeats
+%	\new PianoStaff \with { instrumentName = "Piano" } {
+%		<<
+%			\new Staff = "upper_one" \upper_one
+%			\new Staff = "upper_two" \upper_two
+%			\new Staff = "lower_one" \lower_one
+%			\new Staff = "lower_two" \lower_two
+%			\new Staff = "lower_three" \lower_three
+%		>>
+%	}
+%	\midi { }
+%}
 
