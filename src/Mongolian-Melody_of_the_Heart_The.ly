@@ -80,6 +80,19 @@ upper_two = \relative c' {
 	% Bar 17
 	s1 | s4 c'4-> s4 cis4-> |
 
+	% Bar 19
+	s1 | s1 |
+
+	% Bar 21
+	s1 | s1 | s1 |
+
+	% Bar 24
+	s2. <f, a>4 | <g bes d>2. <bes d>4 |
+
+	% Bar 26
+	<e f>2. e4 | <a, e' f>2. c4 |
+
+
 }
 
 lower_one = \relative c' {
@@ -105,7 +118,23 @@ lower_one = \relative c' {
 	% Bar 14
 	r8 a e' a, g' a, e' a, | a,4-- \stemDown f'2-- g4-- | d1-- |
 
+	% Page 2
+	% Bar 17
+	f2 g4. f16 g | a\arpeggio c a4.~ a4 a4-- |
 
+	% Bar 19
+	d,2 f4 d'4 | c2 a4 c |
+
+	% Bar 21
+	g8 a \grace { g16 a } g8 f d4 f8 g | a2.~ a8 d,16 e | d2. c4 |
+
+	% Bar 24
+	bes16-- f' a bes d f d bes a f' d bes a bes a f |
+	g,-- d' a' bes d f d bes a f' d bes a bes a d, |
+
+	% Bar 26
+	f,16-- c' a' c e  f e c a f' e c a c a f  |
+	d,16-- c' f  a e' f e c a f' e c a c a d, |
 
 }
 
@@ -126,6 +155,22 @@ lower_two = \relative c' {
 	% Bar 14
 	s4 e4 g e | s1 | s1 |
 
+	% Page2
+	% Bar 17
+	bes1 | f2\arpeggio e2 |
+
+	% Bar 19
+	d1 | ees'2 d2 |
+
+	% Bar 21
+	bes1 | a2. r4 | r2 d2 |
+
+	% Bar 24
+	s1 | s1 |
+
+	% Bar 16
+	s1 | s1 |
+
 }
 
 lower_three = \relative c' {
@@ -141,6 +186,13 @@ lower_three = \relative c' {
 
 	% Bar 14
 	d1 | s1 | r2 \stemDown d,2 |
+
+	% Page2
+	% Bar 17
+	% Bar 19
+	% Bar 21
+	% Bar 24
+	% Bar 16
 
 }
 
