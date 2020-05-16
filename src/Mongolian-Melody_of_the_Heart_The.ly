@@ -120,21 +120,25 @@ lower_one = \relative c' {
 
 	% Page 2
 	% Bar 17
-	f2 g4. f16 g | a\arpeggio c a4.~ a4 a4-- |
+	\stemUp
+	f2 g4. f16 g |
+	a\arpeggio c a4.~ a4 a4-- |
 
 	% Bar 19
 	d,2 f4 d'4 | c2 a4 c |
 
 	% Bar 21
-	g8 a \grace { g16 a } g8 f d4 f8 g | a2.~ a8 d,16 e | d2. c4 |
+	g8 a \acciaccatura { g16 a } g8 f d4 f8 g | a2.~ a8 d,16 e | d2. c4 |
 
 	% Bar 24
+	\stemDown
 	bes16-- f' a bes d f d bes a f' d bes a bes a f |
 	g,-- d' a' bes d f d bes a f' d bes a bes a d, |
 
 	% Bar 26
 	f,16-- c' a' c e  f e c a f' e c a c a f  |
-	d,16-- c' f  a e' f e c a f' e c a c a d, |
+	\stemUp
+	d,16-- c' f  a \stemNeutral e' f e c a f' e c a c a d, |
 
 }
 
@@ -157,18 +161,20 @@ lower_two = \relative c' {
 
 	% Page2
 	% Bar 17
-	bes1 | f2\arpeggio e2 |
+	bes,1 |
+	\stemDown
+	f2\arpeggio e2 |
 
 	% Bar 19
 	d1 | ees'2 d2 |
 
 	% Bar 21
-	bes1 | a2. r4 | r2 d2 |
+	bes1 | a2. r4 | r2 d,2 |
 
 	% Bar 24
 	s1 | s1 |
 
-	% Bar 16
+	% Bar 26
 	s1 | s1 |
 
 }
@@ -189,10 +195,19 @@ lower_three = \relative c' {
 
 	% Page2
 	% Bar 17
+	s1 | s1 |
+
 	% Bar 19
+	s1 | s1 |
+
 	% Bar 21
+	s1 | s1 | s1 |
+
 	% Bar 24
-	% Bar 16
+	s1 | s1 |
+
+	% Bar 26
+	s1 | s1 |
 
 }
 
