@@ -1,9 +1,9 @@
-\version "2.20.0"
+\version "2.19.0"
 date = #(strftime "%d %b %Y" (localtime (current-time)))
 
 \header {
 	title = "Дөрвөн цагийн тал"
-	subsubtitle = \markup {
+	copyright = \markup {
 		\line { \date " - @VERSION@" }
 	}
   	composer = "Л. Мөрдорж"
@@ -22,7 +22,7 @@ Soprano = \relative c' {
 	% Bar 6
 	c8( d) f,2 | d8 f16 g bes4. g8 | c( bes) f2 |
 	\repeat volta 2 {
-		d'8 bes f'4. d8 |
+		d'8\f bes f'4. d8 |
 
 		\break
 		% Bar 10
@@ -41,8 +41,20 @@ words = \lyricmode {
 	Янаг-гийн сайхан
 
 	% Bar 6
-	харц шиг | Яр гуй нүд
+	харц шиг |
+	Яр гуй _ нүд— лэн |
+	ми—шээ— сэн |
+	\repeat volta 2 {
+		Хан— шийн но— гоо |
 
+		% Bar 10
+		я— рай— сан |
+		Хав— рын _ тал минь |
+	}
+	\alternative {
+		{ нял— хар— на }
+		{ цав— цай— на — — —  }
+	}
 }
 
 upper_one = \relative c' {
@@ -232,3 +244,43 @@ lower_two = \relative c' {
 	\midi { }
 }
 
+\markup {
+	\hspace #0.1 % moves the column off the left margin;
+	% can be removed if space on the page is tight
+	\column {
+		\line { \bold "2."
+		\column {
+			Уртын сайхан дуу шиг
+			Ухаан санаа саруултгаж
+			Зуун бээрээ дуниартсан
+			Зуны тал минь униартана
+			"This is verse two."
+			"It has two lines."
+		}
+	}
+	\combine \null \vspace #0.1 % adds vertical spacing between verses
+	\line { \bold "3."
+		\column {
+			Нарны сайхан цацраг шиг
+			Найман зүгтээ туяарч
+            Намирсан тариа шаагиулсан
+            Намрын тал минь шаргалтана
+			"This is verse three."
+			"It has two lines."
+		}
+	}
+	\combine \null \vspace #0.1 % adds vertical spacing between verses
+	\line { \bold "4."
+		\column {
+			Цагаан сайхан сэтгэл шиг
+			Цасан цайдам алслаж
+			Өврийн элчээ цантуулсан
+			Өвлийн тал минь цавцайна
+			"This is verse three."
+			"It has two lines."
+		}
+	}
+	}
+	% can be removed if page space is tight
+
+}
