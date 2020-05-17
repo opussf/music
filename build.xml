@@ -1,7 +1,56 @@
 <project name="master" default="package">
 
+	<property name="build.number" value=""/>
+	<!--  Pull git repo info -->
+	<!-- Get the last tag reachable from this branch -->
+	<exec executable="git" dir="." outputproperty="git.tag" failifexecutionfails="false" errorproperty="">
+		<arg line="describe --tags --abbrev=0" />
+	</exec>
+	<!-- Get a 'revision' based on last tag, commit count, commitsha, and branch name -->
+	<exec executable="git" dir="." outputproperty="git.revision" failifexecutionfails="false" errorproperty="">
+		<arg line="describe --tags --always HEAD" />
+	</exec>
+	<condition property="repository.version" value="${git.revision}" else="unknown">
+		<and>
+			<isset property="git.revision"/>
+			<length string="${git.revision}" trim="yes" length="0" when="greater"/>
+		</and>
+	</condition>
+	<!-- find gitbranch -->
+	<!-- find gitbranch -->
+	<exec executable="git" dir="." outputproperty="git.branch.tmp" failifexecutionfails="false" errorproperty="">
+		<arg line="rev-parse --abbrev-ref HEAD"/>
+	</exec>
+	<!-- replace '/' in branch name with '_' -->
+	<loadresource property="git.branch">
+		<propertyresource name="git.branch.tmp"/>
+		<filterchain>
+			<tokenfilter>
+				<replacestring from="/" to="_"/>
+			</tokenfilter>
+		</filterchain>
+	</loadresource>
+	<!-- assign the git.branch to the branch property -->
+	<condition property="branch" value="-${git.branch}" else="">
+		<and>
+			<isset property="git.branch"/>
+			<not>
+				<or>
+					<equals arg1="${git.branch}" arg2="master"/>
+					<equals arg1="${git.branch}" arg2="HEAD"/>
+				</or>
+			</not>
+		</and>
+	</condition>
+
+	<property name="version.number" value="${repository.version}${branch}${build.number}"/>
+	<echo>Building: ${version.number}</echo>
+	<filter token="VERSION" value="${version.number}"/>
+	<!-- end git repo info -->
+
 	<property name="lilypond" location="/Applications/LilyPond.app/Contents/Resources/bin/lilypond"/>
-	<property name="deployDir" location="/Users/opus/Documents/SheetMusic/Flutemusic/workingOn/favorites/"/>
+	<property name="deployDir" location="${user.home}/Documents/SheetMusic/Flutemusic/workingOn/favorites/"/>
+	<property name="generatedDir" location="generated"/>
 
 	<patternset id="musicFiles">
 		<include name="*.ly"/>
@@ -22,11 +71,20 @@
 				<patternset refid="musicFiles"/>
 			</fileset>
 		</apply>
-		<echo file="target/lilypond.err">${lilypond.err}</echo>
+		<echo file="target/lilypond.err.txt">${lilypond.err}</echo>
 	</target>
 
 	<target name="deploy" depends="package" description="copy pdf and midi files to ${deployDir}">
 		<copy	todir="${deployDir}" preservelastmodified="true">
+			<fileset dir="target">
+				<include name="*.pdf"/>
+				<include name="*.midi"/>
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="generated" depends="package" description="copy pdf and midi files to ${generatedDir}">
+		<copy	todir="${generatedDir}" preservelastmodified="true">
 			<fileset dir="target">
 				<include name="*.pdf"/>
 				<include name="*.midi"/>
