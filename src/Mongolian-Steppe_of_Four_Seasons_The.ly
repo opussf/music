@@ -98,7 +98,7 @@ upper_two = \relative c' {
 	}
 	\alternative {
 		{ ees4 s2 | }
-		{ ees4 s2 | <c ees g>2. }
+		{ ees4 s2 | <c ees g>2. | s2. | }
 	}
 
 }
@@ -125,7 +125,13 @@ lower = \relative c' {
 		% Bar 10
 		<c, c,>4 r8 ees8( d c) |
 		<g d'>4 d'8( f bes c) |
-
+	}
+	\alternative {
+		{ <f,, f'>4 bes8( d a') g16 f | }
+		{ <f, f'>4 bes8( f' bes d) |
+		\clef treble
+		r8 c' ees g g bes |
+		<bes, d g bes>2\fermata r4 }
 	}
 
 }
@@ -179,4 +185,3 @@ lower = \relative c' {
 	>>
 	\midi { }
 }
-
