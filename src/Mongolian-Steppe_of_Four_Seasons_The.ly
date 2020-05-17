@@ -33,6 +33,7 @@ Soprano = \relative c' {
 		{ c8 d bes2 }
 		{ c8 d bes2~ | bes2.~ | bes8 r8 r4 r4 }
 	}
+	\bar "|."
 }
 
 words = \lyricmode {
