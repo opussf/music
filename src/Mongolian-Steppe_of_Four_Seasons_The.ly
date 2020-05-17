@@ -245,42 +245,42 @@ lower_two = \relative c' {
 }
 
 \markup {
-	\hspace #0.1 % moves the column off the left margin;
-	% can be removed if space on the page is tight
-	\column {
-		\line { \bold "2."
-		\column {
-			Уртын сайхан дуу шиг
-			Ухаан санаа саруултгаж
-			Зуун бээрээ дуниартсан
-			Зуны тал минь униартана
-			"This is verse two."
-			"It has two lines."
+	\fill-line {
+		\center-column {
+			\column {
+				\hspace #20
+				\line { \bold "2."
+					\column {
+						"Уртын сайхан дуу шиг"
+						"Ухаан санаа саруултгаж"
+						"Зуун бээрээ дуниартсан"
+						"Зуны тал минь униартана"
+					}
+				}
+			}
+			\combine \null \vspace #1 % adds vertical spacing between verses
+			\column {
+				\line { \bold "3."
+					\column {
+						"Нарны сайхан цацраг шиг"
+						"Найман зүгтээ туяарч"
+						"Намирсан тариа шаагиулсан"
+						"Намрын тал минь шаргалтана"
+					}
+				}
+				\hspace #20
+			}
+			\combine \null \vspace #1 % adds vertical spacing between verses
+			\column {
+				\line { \bold "4."
+					\column {
+						"Цагаан сайхан сэтгэл шиг"
+						"Цасан цайдам алслаж"
+						"Өврийн элчээ цантуулсан"
+						"Өвлийн тал минь цавцайна"
+					}
+				}
+			}
 		}
 	}
-	\combine \null \vspace #0.1 % adds vertical spacing between verses
-	\line { \bold "3."
-		\column {
-			Нарны сайхан цацраг шиг
-			Найман зүгтээ туяарч
-            Намирсан тариа шаагиулсан
-            Намрын тал минь шаргалтана
-			"This is verse three."
-			"It has two lines."
-		}
-	}
-	\combine \null \vspace #0.1 % adds vertical spacing between verses
-	\line { \bold "4."
-		\column {
-			Цагаан сайхан сэтгэл шиг
-			Цасан цайдам алслаж
-			Өврийн элчээ цантуулсан
-			Өвлийн тал минь цавцайна
-			"This is verse three."
-			"It has two lines."
-		}
-	}
-	}
-	% can be removed if page space is tight
-
 }
