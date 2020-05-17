@@ -1,230 +1,185 @@
 \version "2.20.0"
+date = #(strftime "%d %b %Y" (localtime (current-time)))
+
 \header {
-  copyright = "version: @VERSION@"
-  title = "title"
-  subtitle = "subtitle"
-  composer = "composer"
-  arranger = "arranger"
-  instrument = "instrument"
-  metre = "metre"
-  opus = "opus"
-  piece = "piece"
-  poet = "poet"
-  texidoc = "All header fields with special meanings."
-  enteredby = "jcn"
-  source = "urtext"
+	title = "Дөрвөн цагийн тал"
+	subsubtitle = \markup {
+		\line { \date " - @VERSION@" }
+	}
+  	composer = "Л. Мөрдорж"
 }
 
-upper_one = \relative c'' {
-	\key f \major
-	\time 4/4
-	\tempo "Sostenuto" 4 = 60
+Soprano = \relative c' {
+	\key bes \major
+	\time 3/4
+	\tempo "Maestoso" 4 = 80
 
 	% Bar 1
-	a'4.--->\f <a g>8-- <a g f>-- <a f e>-- <a f e d>-- <a e d c>-- |
-	<a e d bes>1-- |
-
-	a,4.\mf\> <a g>8 <a g f> <a f e> <a f e d> <a e d c> |
-	<a e d bes>1\! |
-
-	a,4\mp-- f'2-- g4-- |
+	R2. | R | R | R |
+	f8( f) bes4.( g8) |
 
 	\break
 	% Bar 6
-	d1 | f2 g4. f16 g | a c a4.~ a2 | d,2 f4 d'4 |
+	c8( d) f,2 | d8 f16 g bes4. g8 | c( bes) f2 |
+	\repeat volta 2 {
+		d'8 bes f'4. d8 |
 
-	\break
-	% Bar 10
-	<c g>2 a4 c4 | g8 a \grace { g16 a } g8 f d4 f8 g | a2.~ a8 d,16 e | d1~
-
-	\break
-	% Bar 14
-	d4 r4 r2 | R1\mf | r16 e16 f e a e f e a e f e a e f e |
-
-	% Page 2
-	\break
-	% Bar 17
-	r16 d16 f d a' d, f d bes' d, f d a' d, f d |
-	r8. c16 c'16 c, a' c, r16 cis a' cis, cis' cis, a' cis, |
-
-	\break
-	% Bar 19
-	d16 e f e a e f e r e f e a e f e | r16 a g a c a g a c d a c g a d, a' |
-
-	\break
-	% Bar 21
-	r16 d a bes g a d, a' r16 a g a f a d, a' |
-	r16 a g a e a g d' a d <a e'> <d g> <e a>8-> r8 |
-	r16 e, f e a e f e a e f e a e f e |
-
-	\break
-	% Bar 24
-	\stemUp
-	<f a bes d f>2.--\arpeggio  <d d'>8 <f f'> |
-	g'16 f g8~ g2 <f, f'>8 <g g'> |
-
-	\break
-	% Bar 26
-	<a a'>2~ <a a'>8 <f f'> <g g'> <c c'> |
-	a'16 g a4.~ a8 <f, f'> <g g'> <a a'> |
+		\break
+		% Bar 10
+		g8 f g,2 |
+		d'8 c16 d f,4. bes8 |
+	}
+	\alternative {
+		{ c8 d bes2 }
+		{ c8 d bes2~ | bes2.~ | bes8 r8 r4 r4 }
+	}
 }
 
+words = \lyricmode {
+	- - - | - - - | - - - | - - - |
+	Янаг-гийн сайхан
+
+}
+
+upper_one = \relative c' {
+	\key bes \major
+	\time 3/4
+
+	% Bar 1
+	\stemUp
+	d'8 bes \stemDown<f d' f>4. <g d'>8 |
+	\stemUp <ees' g>8 <d f> <g,, d' g>2 |
+	d''8 c16( d f,4. <g bes>8) |
+	c8 d <d, f bes>2 |
+	f8 f <d f bes>4. <c g'>8 |
+
+	% Bar 6
+	c'8 d8 <bes, d f>2 |
+	d8 f16( g) <d f bes>4. g8 |
+	c8 bes f2 |
+	\repeat volta 2 {
+		\stemDown
+		d'8 bes( <f d' g>4. <g bes d>8) |
+
+		% Bar 10
+		\stemUp
+		<ees' g>8^( <d f> <g,, d' g>2) |
+		d''8 c16 d f,4. <ees g>8 |
+	}
+	\alternative {
+		{ c'8^( d <d, f bes>2) }
+		{ c'8^( d <d, f bes>2) | bes'8 ees g bes c d | \stemDown \ottava #-1 <f,, bes d>2.\fermata | }
+
+	}
+}
 
 upper_two = \relative c' {
-	\key f \major
-	\time 4/4
+	\key bes \major
+	\time 3/4
 
 	% Bar 1
-	s1 | s1 | s1 | s1 | s1 |
+	\stemDown
+	f8( r8 s2 |
+	g2) s4 |
+	<g bes>4 bes,4 r4 |
+	ees4 s2 |
+	s2. |
 
 	% Bar 6
-	s1 | s1 | s1 | s1 |
+	<ees f>4 s2 |
+	f,4 s4. c'16_( ees) |
+	g4 d_( c) |
+	\repeat volta 2 {
+		s2. |
 
-	% Bar 10
-	\stemDown
-	s2 c2 | bes2 s2 | s1 | s1 |
-
-	% Bar 14
-	s1 | s1 | s1 |
-
-	% Page 2
-	% Bar 17
-	s1 | s4 c'4-> s4 cis4-> |
-
-	% Bar 19
-	s1 | s1 |
-
-	% Bar 21
-	s1 | s1 | s1 |
-
-	% Bar 24
-	s2. <f, a>4 | <g bes d>2. <bes d>4 |
-
-	% Bar 26
-	<e f>2. e4 | <a, e' f>2. c4 |
-
+		% Bar 10
+		g'2 s4 |
+		<g bes>4 bes, r4 |
+	}
+	\alternative {
+		{ ees4 s2 | }
+		{ ees4 s2 | <c ees g>2. | s2. | }
+	}
 
 }
 
-lower_one = \relative c' {
-	\key f \major
-	\time 4/4
+lower = \relative c' {
+	\key bes \major
+	\time 3/4
+	\clef bass
 
 	% Bar 1
-	a'4.--->\f <a g>8-- <a g f>-- <a f e>-- <a f e d>-- <a e d c>-- |
-	<a e d bes>1-- |
-
-	\clef bass
-	a,4. a8 a a a a | a1 | R1 |
+	bes,8 f' d g bes d |
+	<c, c,>4 r8 ees8( d c) |
+	<d g,>4 d8( f bes d) |
+	<f,, f'>4 bes8( d a') g16( f) |
+	r4 bes,8( f' g bes) |
 
 	% Bar 6
-	\stemUp
-	r8 a e' a, g' a, e' a, | r8 f a bes r8 d, a' bes | r8 a c a r8 a cis a |
-	r8 a, f' a d, a' f a |
+	<f, f'>4 r8 d'16^([ ees d8 c)] |
+	bes4 g8^( d' g bes) |
+	<f, f'>4 r8 d'16( ees) f8( f,) |
+	\repeat volta 2 {
+		bes( f' d f bes d ) |
 
-	% Bar 10
-	r8 a g a r8 a4 a8 | r8 d, a' bes r8 f a bes | r8 e, g a e'4 r4 |
-	r8 a, e' a, g' a, e' a, |
-
-	% Bar 14
-	r8 a e' a, g' a, e' a, | a,4-- \stemDown f'2-- g4-- | d1-- |
-
-	% Page 2
-	% Bar 17
-	\stemUp
-	f2 g4. f16 g |
-	a\arpeggio c a4.~ a4 a4-- |
-
-	% Bar 19
-	d,2 f4 d'4 | c2 a4 c |
-
-	% Bar 21
-	g8 a \acciaccatura { g16 a } g8 f d4 f8 g | a2.~ a8 d,16 e | d2. c4 |
-
-	% Bar 24
-	\stemDown
-	bes16-- f' a bes d f d bes a f' d bes a bes a f |
-	g,-- d' a' bes d f d bes a f' d bes a bes a d, |
-
-	% Bar 26
-	f,16-- c' a' c e  f e c a f' e c a c a f  |
-	\stemUp
-	d,16-- c' f  a \stemNeutral e' f e c a f' e c a c a d, |
-
+		% Bar 10
+		<c, c,>4 r8 ees8( d c) |
+		<g d'>4 d'8( f bes c) |
+	}
+	\alternative {
+		{ <f,, f'>4 bes8( d a') g16 f | }
+		{ <f, f'>4 bes8( f' bes d) |
+		\clef treble
+		g8\rest c ees g g bes |
+		<bes, d g bes>2\fermata r4 }
+	}
 }
 
 lower_two = \relative c' {
-	\key f \major
-	\time 4/4
+	\key bes \major
+	\time 3/4
+	\clef bass
 
 	% Bar 1
-	s1 | s1 | s1 | s1 | s1 |
+	s2. |
+	s |
+	s |
+	s |
+	s |
 
 	% Bar 6
-	s4 e4 g4 e4 | s1 |
-	s4 c4 s4 cis4 | s1 |
+	s |
+	s |
+	s |
+	\repeat volta 2 {
+		s |
 
-	% Bar 10
-	s1 | s1 | s1 | s4 e4 g e |
-
-	% Bar 14
-	s4 e4 g e | s1 | s1 |
-
-	% Page2
-	% Bar 17
-	bes,1 |
-	\stemDown
-	f2\arpeggio e2 |
-
-	% Bar 19
-	d1 | ees'2 d2 |
-
-	% Bar 21
-	bes1 | a2. r4 | r2 d,2 |
-
-	% Bar 24
-	s1 | s1 |
-
-	% Bar 26
-	s1 | s1 |
-
-}
-
-lower_three = \relative c' {
-	\key f \major
-	\time 4/4
-
-	% Bar 1
-	s1 | s1 | s1 | s1 | s1 |
-	d,1 | bes2 g2 | f e | d1 |
-
-	% Bar 10
-	ees'2 d | g, bes | a2. r4 | d1 |
-
-	% Bar 14
-	d1 | s1 | r2 \stemDown d,2 |
-
-	% Page2
-	% Bar 17
-	s1 | s1 |
-
-	% Bar 19
-	s1 | s1 |
-
-	% Bar 21
-	s1 | s1 | s1 |
-
-	% Bar 24
-	s1 | s1 |
-
-	% Bar 26
-	s1 | s1 |
-
+		% Bar 10
+		s |
+		s |
+	}
+	\alternative {
+		{ s | }
+		{ s |
+		\clef treble
+		\stemDown
+		<bes g ees c> |
+		s2. }
+	}
 }
 
 \score {
 	<<
-		\new PianoStaff \with { instrumentName = "Piano" }
+		<<
+			\new Staff \with { instrumentName = #"Soprano" } \Soprano
+			\context Lyrics {
+				\lyricsto "Soprano" {
+					\words
+				}
+			}
+		>>
+
+		\new PianoStaff \with { instrumentName = #"Piano" }
 		<<
 			\new Staff {
 				<<
@@ -234,27 +189,42 @@ lower_three = \relative c' {
 			}
 			\new Staff {
 				<<
-					\lower_one
+					\lower
 					\lower_two
-					\lower_three
 				>>
 			}
 		>>
 	>>
 	\layout { }
+}
+\score {
+	\unfoldRepeats
+	<<
+		<<
+			\new Staff \with { instrumentName = #"Soprano" } \Soprano
+			\context Lyrics {
+				\lyricsto "Soprano" {
+					\words
+				}
+			}
+		>>
+
+		\new PianoStaff \with { instrumentName = #"Piano" }
+		<<
+			\new Staff {
+				<<
+					\upper_one
+					\upper_two
+				>>
+			}
+			\new Staff {
+				<<
+					\lower
+					\lower_two
+				>>
+			}
+		>>
+	>>
 	\midi { }
 }
-% \score {
-%	\unfoldRepeats
-%	\new PianoStaff \with { instrumentName = "Piano" } {
-%		<<
-%			\new Staff = "upper_one" \upper_one
-%			\new Staff = "upper_two" \upper_two
-%			\new Staff = "lower_one" \lower_one
-%			\new Staff = "lower_two" \lower_two
-%			\new Staff = "lower_three" \lower_three
-%		>>
-%	}
-%	\midi { }
-%}
 
