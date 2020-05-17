@@ -36,8 +36,12 @@ Soprano = \relative c' {
 }
 
 words = \lyricmode {
-	- - - | - - - | - - - | - - - |
+
+	% Bar 5
 	Янаг-гийн сайхан
+
+	% Bar 6
+	харц шиг | Яр гуй нүд
 
 }
 
@@ -173,7 +177,7 @@ lower_two = \relative c' {
 		<<
 			\new Staff \with { instrumentName = #"Soprano" } \Soprano
 			\context Lyrics {
-				\lyricsto "Soprano" {
+				\lyricsto "" {
 					\words
 				}
 			}
@@ -203,7 +207,7 @@ lower_two = \relative c' {
 		<<
 			\new Staff \with { instrumentName = #"Soprano" } \Soprano
 			\context Lyrics {
-				\lyricsto "Soprano" {
+				\lyricsto "" {
 					\words
 				}
 			}
