@@ -1,5 +1,5 @@
 \version "2.20.0"
-date = #(strftime "%d-%m-%Y" (localtime (current-time)))
+date = #(strftime "%d %b %Y" (localtime (current-time)))
 
 \header {
 	title = "Дөрвөн цагийн тал"
@@ -130,10 +130,42 @@ lower = \relative c' {
 		{ <f,, f'>4 bes8( d a') g16 f | }
 		{ <f, f'>4 bes8( f' bes d) |
 		\clef treble
-		r8 c' ees g g bes |
+		g8\rest c ees g g bes |
 		<bes, d g bes>2\fermata r4 }
 	}
+}
 
+lower_two = \relative c' {
+	\key bes \major
+	\time 3/4
+	\clef bass
+
+	% Bar 1
+	s2. |
+	s |
+	s |
+	s |
+	s |
+
+	% Bar 6
+	s |
+	s |
+	s |
+	\repeat volta 2 {
+		s |
+
+		% Bar 10
+		s |
+		s |
+	}
+	\alternative {
+		{ s | }
+		{ s |
+		\clef treble
+		\stemDown
+		<bes g ees c> |
+		s2. }
+	}
 }
 
 \score {
@@ -155,7 +187,12 @@ lower = \relative c' {
 					\upper_two
 				>>
 			}
-			\new Staff = "lower" \lower
+			\new Staff {
+				<<
+					\lower
+					\lower_two
+				>>
+			}
 		>>
 	>>
 	\layout { }
@@ -180,8 +217,14 @@ lower = \relative c' {
 					\upper_two
 				>>
 			}
-			\new Staff = "lower" \lower
+			\new Staff {
+				<<
+					\lower
+					\lower_two
+				>>
+			}
 		>>
 	>>
 	\midi { }
 }
+
