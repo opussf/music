@@ -1,7 +1,18 @@
 \version "2.20.0"
 \header {
-	title = ""
-	composer = ""
+  copyright = "version: @VERSION@"
+  title = "title"
+  subtitle = "subtitle"
+  composer = "composer"
+  arranger = "arranger"
+  instrument = "instrument"
+  metre = "metre"
+  opus = "opus"
+  piece = "piece"
+  poet = "poet"
+  texidoc = "All header fields with special meanings."
+  enteredby = "jcn"
+  source = "urtext"
 }
 
 upper_one = \relative c'' {
