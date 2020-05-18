@@ -1,81 +1,107 @@
 \version "2.20.0"
 \header {
-	title = "Tubular Bells"
-	subtitle = "Theme from THE EXCORCIST"
-	composer = "By MIKE OLDFIELD"
-	copyright = \markup \left-align \center-column {
-		\line { "Copyright " \char ##x00A9 " 1987 Guns N' Roses Music (ASCAP)" }
-		\line { "International Copyright Secured    All rights Reserved" }
-	}
-  	source = "urtext"
+  copyright = "version: @VERSION@"
+  title = "Bügd Nairamdakh Mongol"
+  composer = "B. Damdinsuren / L. Murorj"
 }
 
-upper = \relative c {
-	\key c \major
+global = {
+	\key aes \major
 	\time 4/4
-	\tempo 4 = 90
-
-	\partial 8
-	e'8 |
-	\repeat unfold 3 {
-		a e b' e, g a4 c8( |
-
-		\time 3/4
-		c8) d4 b8 c e,8 |
-
-		\time 4/4
-		a e b' e, g a4 c8( |
-		c8) d4 b8 c e,8 b' e, |
-	}
+	\tempo 4 = 88
 }
 
-lower = \relative c {
+upper = \relative c' {
+	\global
+
+	% Bar 1
+%	<c ees aes>2.\f r4 |
+%	ees4\mf ees8. f16 aes8. bes16 aes8. f16 |
+%	ees8. f16 ees8. c16 ees4. ees8 |
+%	ees4 aes8. bes16 c8. ees16 c8. aes16 |
+%	bes4 bes8. f16 aes2 |
+
+	% Bar 5 (line 2)
+%	aes4 aes8. bes16 c4 ees4 |
+%	f8[ ees c8. aes16] bes2 |
+%	c8 ees c bes aes8. bes16 aes8 f8 |
+%	ees4 ees8. f16 aes2 |
+%	f'4. ees8 c4 c8 ees |
+
+}
+
+lower_one = \relative c' {
+	\global
+
+	% Bar 1
+}
+
+lower_two = \relative c' {
+	\global
+
+	% Bar 1
+}
+
+lower_three = \relative c' {
+	\global
+
+	% Bar 1
+}
+
+lower_four = \relative c' {
+	\global
 	\clef bass
-	\key c \major
 
-	\partial 8
-	r8 |
+	% Bar 1
+	\stemDown
 	R1 |
+	aes,2\mf f |
+	c bes4 ees |
+	aes4 g f ees |
+	des ees aes aes8 g |
 
-	\time 3/4
-	R2. |
+	% Bar 6 (line 2)
+	aes4 f' ees c |
+	des ees4. ees8 ees des |
+	c4 ees f des |
+	ees ees, aes f8 ees |
+	des8\f ees f g aes4 aes |
 
-	\time 4/4
-	R1 | R | R
-
-	\time 3/4
-	R2. |
-
-	\time 4/4
-	R1 |
-	r2 r4 r8 e8
-	a e b' e, g a4.( |
-
-	\time 3/4
-	a2 a8) e |
-
-	\time 4/4
-	a e b' e, g a4.( |
-	a2. a8) e |
+	% Bar 11 (line 3)
+	ees8. ees16 ees4 aes aes8 bes |
+	c4 c8 des c4 f,4 |
+	des'8 c bes4 des4. ees8 |
+	c4 bes aes g |
+	aes g f ees |
+	des2 ees4 ees |
+	aes1
+	\bar "|."
 
 }
-
 
 \score {
-	\new PianoStaff \with { instrumentName = #"Piano" }
 	<<
-		\new Staff = "upper" \upper
-		\new Staff = "lower" \lower
+		\new PianoStaff \with { instrumentName = "Piano" }
+		<<
+			\new Staff {
+				<<
+					\upper
+				>>
+			}
+			\new Staff {
+				<<
+					\lower_one
+					\lower_two
+				>>
+			}
+			\new Staff {
+				<<
+					\lower_three
+					\lower_four
+				>>
+			}
+		>>
 	>>
 	\layout { }
-}
-\score {
-	\unfoldRepeats
-	\new PianoStaff \with { instrumentName = #"Piano" }
-	<<
-		\new Staff = "upper" \upper
-		\new Staff = "lower" \lower
-	>>
 	\midi { }
 }
-
