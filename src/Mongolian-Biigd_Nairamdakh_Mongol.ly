@@ -40,10 +40,31 @@ lower_one = \relative c' {
 
 lower_two = \relative c' {
 	\global
+	\clef bass
 
 	% Bar 1
+	\stemDown
+	R1 |
+	c,2\mf f |
+	ees des |
+	c4 ees f8. ees16 aes8. ees16 |
+	f4 g ees2 |
+
 	% Bar 6 (line 2)
+	aes4 aes2 aes4 |
+	aes aes 8. aes16 g2 |
+	aes4 g f f |
+	aes g aes2 |
+	aes4.\f g8 ees4 ees |
+
 	% Bar 11 (line 3)
+	ees4 c8 ees aes2 |
+	ees4. f8 aes4 bes8 aes |
+	f4 f8 aes f4 ees4~ |
+	ees8 ees des4 c ees4~ |
+	ees8 ees g4 aes aes |
+	aes2 aes4 g |
+	aes1 |
 }
 
 lower_three = \relative c' {
