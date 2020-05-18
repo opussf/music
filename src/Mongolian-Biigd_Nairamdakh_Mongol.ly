@@ -15,19 +15,29 @@ upper = \relative c' {
 	\global
 
 	% Bar 1
-%	<c ees aes>2.\f r4 |
-%	ees4\mf ees8. f16 aes8. bes16 aes8. f16 |
-%	ees8. f16 ees8. c16 ees4. ees8 |
-%	ees4 aes8. bes16 c8. ees16 c8. aes16 |
-%	bes4 bes8. f16 aes2 |
+	<c ees aes>2.\f r4 |
+	ees4\mf ees8. f16 aes8. bes16 aes8. f16 |
+	ees8. f16 ees8. c16 ees4. ees8 |
+	ees4 aes8. bes16 c8. ees16 c8. aes16 |
+	bes4 bes8. f16 aes2 |
 
-	% Bar 5 (line 2)
-%	aes4 aes8. bes16 c4 ees4 |
-%	f8[ ees c8. aes16] bes2 |
-%	c8 ees c bes aes8. bes16 aes8 f8 |
-%	ees4 ees8. f16 aes2 |
-%	f'4. ees8 c4 c8 ees |
+	\break
+	% Bar 6 (line 2)
+	aes4 aes8. bes16 c4 ees4 |
+	f8[ ees c8. aes16] bes2 |
+	c8 ees c bes aes8. bes16 aes8 f8 |
+	ees4 ees8. f16 aes2 |
+	f'4.\f ees8 c4 c8 ees |
 
+	\break
+	% Bar 11 (line 3)
+	bes4 aes8 bes8 c4 r4 |
+	ees4. f8 ees c bes aes |
+	bes4 f8 aes bes4 r4 | \noBreak
+	aes4. f8 aes4 bes | \noBreak
+	c4 c8 bes c c ees4 | \noBreak
+	f8 aes f ees c4 ees8 ees |
+	aes1 |
 }
 
 lower_one = \relative c' {
@@ -53,7 +63,7 @@ lower_one = \relative c' {
 	aes4. aes8 c ees c4 |
 	bes4 des bes g |
 	c bes c bes |
-	a4 c8 bes c4 c |
+	aes4 c8 bes c4 c |
 	f8 aes f ees4 ees8 des4 |
 	c1 |
 }
