@@ -34,18 +34,45 @@ lower_one = \relative c' {
 	\global
 
 	% Bar 1
+	% Bar 6 (line 2)
+	% Bar 11 (line 3)
 }
 
 lower_two = \relative c' {
 	\global
 
 	% Bar 1
+	% Bar 6 (line 2)
+	% Bar 11 (line 3)
 }
 
 lower_three = \relative c' {
 	\global
+	\clef bass
 
 	% Bar 1
+	\stemUp
+	R1 |
+	aes2 c |
+	c bes |
+	aes4 c2 c4 |
+	des4 ees8. ees16 c2 |
+
+	% Bar 6 (line 2)
+	f4 c ees c |
+	des ees bes2 |
+	c4 bes aes aes |
+	c des c2 |
+	f8\f f4 ees8 c4 c |
+
+	% Bar 11 (line 3)
+	bes4 aes8 bes c2 |
+	c4 c8 des ees4 f |
+	des4 bes des2 |
+	aes4 g aes bes |
+	c c f ges |
+	f8 aes f ees c c ees4 |
+	aes,1 |
 }
 
 lower_four = \relative c' {
