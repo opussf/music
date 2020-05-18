@@ -1,4 +1,4 @@
-\version "2.20.0"
+\version "2.19.0"
 \header {
   copyright = "version: @VERSION@"
   title = "Bügd Nairamdakh Mongol"
@@ -34,8 +34,28 @@ lower_one = \relative c' {
 	\global
 
 	% Bar 1
+	\stemUp
+	R1 |
+	aes2 aes |
+	g g |
+	aes4 g aes c8. aes16 |
+	bes4 bes aes2 |
+
 	% Bar 6 (line 2)
+	c4 f ees ees |
+	f c ees2 |
+	ees4 ees c des |
+	c bes aes2 |
+	des8 c4 bes8 aes4 aes |
+
 	% Bar 11 (line 3)
+	g4 aes8 g c2 |
+	aes4. aes8 c ees c4 |
+	bes4 des bes g |
+	c bes c bes |
+	a4 c8 bes c4 c |
+	f8 aes f ees4 ees8 des4 |
+	c1 |
 }
 
 lower_two = \relative c' {
