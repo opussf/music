@@ -2,7 +2,7 @@
 \header {
   copyright = "version: @VERSION@"
   title = "Ode to Joy"
-  subtitle = "from Symphont no.9"
+  subtitle = "from Symphony no.9"
   composer = "Ludwig Von Beethoven (1770-1827)"
 }
 
