@@ -163,6 +163,202 @@
 	\tuplet 3/2 4 {	r8( e, gis)	cis( e, gis)	e'( e, gis)	cis( e, gis) }	|
 					<gis gis,>1)											|
 
+	% Page 3
+	% Bar 32
+	s1	|
+	s1	|
+	s1	|
+
+	% Bar 33
+	s1	|
+	s1	|
+	s1	|
+
+	% Bar 34
+	s1	|
+	s1	|
+	s1	|
+
+	% Bar 35
+	s1	|
+	s1	|
+	s1	|
+
+	% Bar 36
+	s1	|
+	s1	|
+	s1	|
+
+	% Bar 37
+	s1	|
+	s1	|
+	s1	|
+
+	% Bar 38
+	s1	|
+	s1	|
+	s1	|
+
+	% Bar 39
+	s1	|
+	s1	|
+	s1	|
+
+	% Bar 40
+	s1	|
+	s1	|
+	s1	|
+
+	% Bar 41
+	s1	|
+	s1	|
+	s1	|
+
+	% Bar 42
+	s1	|
+	s1	|
+	s1	|
+
+	% Bar 43
+	s1	|
+	s1	|
+	s1	|
+
+	% Bar 44
+	s1	|
+	s1	|
+	s1	|
+
+	% Bar 45
+	s1	|
+	s1	|
+	s1	|
+
+	% Bar 46
+	s1	|
+	s1	|
+	s1	|
+
+	% Bar 47
+	s1	|
+	s1	|
+	s1	|
+
+	% Bar 48
+	s1	|
+	s1	|
+	s1	|
+
+	% Bar 49
+	s1	|
+	s1	|
+	s1	|
+
+	% Bar 50
+	s1	|
+	s1	|
+	s1	|
+
+	% Bar 51
+	s1	|
+	s1	|
+	s1	|
+
+	% Bar 52
+	s1	|
+	s1	|
+	s1	|
+
+	% Bar 53
+	s1	|
+	s1	|
+	s1	|
+
+	% Bar 54
+	s1	|
+	s1	|
+	s1	|
+
+	% Bar 55
+	s1	|
+	s1	|
+	s1	|
+
+	% Bar 56
+	s1	|
+	s1	|
+	s1	|
+
+	% Bar 57
+	s1	|
+	s1	|
+	s1	|
+
+	% Bar 58
+	s1	|
+	s1	|
+	s1	|
+
+	% Bar 59
+	s1	|
+	s1	|
+	s1	|
+
+	% Bar 60
+	s1	|
+	s1	|
+	s1	|
+
+	% Bar 61
+	s1	|
+	s1	|
+	s1	|
+
+	% Bar 62
+	s1	|
+	s1	|
+	s1	|
+
+	% Bar 63
+	s1	|
+	s1	|
+	s1	|
+
+	% Bar 64
+	s1	|
+	s1	|
+	s1	|
+
+	% Bar 65
+	s1	|
+	s1	|
+	s1	|
+
+	% Bar 66
+	s1	|
+	s1	|
+	s1	|
+
+	% Bar 67
+	s1	|
+	s1	|
+	s1	|
+
+	% Bar 68
+	s1	|
+	s1	|
+	s1	|
+
+	% Bar 69
+	s1	|
+	s1	|
+	s1	|
+
+	% Bar 70
+	s1	|
+	s1	|
+	s1	|
+
 }
 
 \score {
