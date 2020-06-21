@@ -71,97 +71,97 @@
 	% Bar 13
 					fis2^(					g4			e)				|
 	\tuplet 3/2 4 {	fis,8( b d)	fis,( b d)	g,( b cis)	e,( b' cis) }	|
-	s1 |
+					<b b,>2(				e,4			g				|
 
 	% Bar 14
 					fis2						fis2^(								|
 	\tuplet 3/2 4 {	fis,8(\> b d)	fis,( b d)	fis,( ais cis)	e,( ais cis)\pp }	|
-	s1 |
+					fis2						<fis fis,>2							|
 
 	% Bar 15
 					b,4)		r4			r4 \stemUp		b'^(				|
 	\tuplet 3/2 4 {	b8( d fis)	b,( d fis)	b,( dis fis)	b,(\< dis fis) }	|
-	s1 |
+					<b b,>1)(													|
 
 	% Bar 16
 					c2.->								ais4		|
 	\tuplet 3/2 4 {	b,8(\! e g)	b,( e g)	b,( e g)	b,( e g) }	|
-	s1 |
+					<b b,>4)\<	<e e,>(\!	<g g,>\>	<e e,>)\!	|
 
 	% Bar 17
-					b2.)											b4^(				|
+					b2.)											b4^(			|
 	\tuplet 3/2 4 {	b,8( dis fis)	b,( dis fis)	b,( dis fis)	b,( dis fis) }	|
-	s1 |
+					<b b,>1(														|
 
 	% Bar 18
 					c2.->								ais4^(		|
 	\tuplet 3/2 4 {	b,8( e g)	b,( e g)	b,( e g)	b,( e g) }	|
-	s1 |
+					<b b,>4)\<	<e e,>(\!	<g g,>\>	<e e,>\!	|
 
 	% Bar 19
 					b2)								b2						|
 	\tuplet 3/2 4 {	b,8( dis! fis)	b,( dis fis)	b,( d eis)	b( d eis) }	|
-	s1 |
+					<b b,>2)						<gis! gis,!>(			|
 
 	% Bar 20
 					b2^(								a2							|
 	\tuplet 3/2 4 {	b8( cis gis'!)	b,( cis gis')	a,( cis fis)	a,( cis fis) }	|
-	s1 |
+					<eis eis,>2						<fis fis,>)						|
 
 	% Bar 21
 					g2						fis2						|
 	\tuplet 3/2 4 {	g,8( b d)	g,( b d)	f,( a dis)	f,( a dis) }	|
-	s1 |
+					<b b,>2(				<bis bis,>					|
 
 	% Bar 22
 					cis2)\pp						cis4^(			cis				|
 	\tuplet 3/2 4 {	cis,8( fis a)	cis,( fis a)	cis,( fis a)	cis,( eis a) }	|
-	s1 |
+					cis,2)							cis(							|
 
 	% Bar 23
 					fis,4)			r4			r4			cis''8.\p cis16	|
 	\tuplet 3/2 4 {	fis8( a cis)	a( cis fis)	cis( fis a)	cis,( fis a) }	|
-	s1 |
+					<fis cis fis,>1)										|
 
 	% Bar 24
 					cis2.											cis8. cis16		|
 	\tuplet 3/2 4 {	cis,8( gis' b)	cis,( gis' b)	cis,( gis' b)	cis,( gis' b) }	|
-	s1 |
+					<eis' cis eis,>1												|
 
 	% Bar 25
 					cis2^(							bis4			cis				|
 	\tuplet 3/2 4 {	cis,8( fis a)	cis,( fis a)	bis,( fis' a)	cis,( fis a) }	|
-	s1 |
+					<fis fis,>2(					<dis dis,>4		<cis cis,>4		|
 
 	% Bar 26
 					dis2.)											dis4^(			|
 	\tuplet 3/2 4 {	dis,8( fis gis)	dis( fis gis)	dis( fis gis)	dis( fis gis) }	|
-	s1 |
+					<bis gis bis,>2.)								<bis gis bis,>4(|
 
 	% Bar 27
 					e2								dis4			cis				|
 	\tuplet 3/2 4 {	e8( gis cis)	e,( gis cis)	dis,( fis a)	cis,( e ais) }	|
-	s1 |
+					<cis gis cis,>2)				<fis, fis,>4(	<fisis fisis,>4	|
 
 	% Bar 28
 					bis4)			gis(			a				fis)				|
 	\tuplet 3/2 4 { bis8( bis, dis)	gis( bis, dis)	a'( bis, dis)	fis( bis, dis) }	|
-	s1 |
+					<gis gis,>1)														|
 
 	% Bar 29
 					r4				gis,^(			a				fis				|
 	\tuplet 3/2 4 { r8( bis dis)	gis,( bis dis)	a( bis dis) 	fis,( bis dis)}	|
-	s1 |
+					<gis gis,>1)													|
 
 	% Bar 30
 					e4)				cis''^(			e			cis)			|
 	\tuplet 3/2 4 {	e,8( e' gis)	cis( e, gis)	e'( e, gis)	cis( e, gis) }	|
-	s1 |
+					<gis gis,>1)												|
 
 	% Bar 31
 					r4			cis,^(			e			cis)			|
 	\tuplet 3/2 4 {	r8( e, gis)	cis( e, gis)	e'( e, gis)	cis( e, gis) }	|
-	s1 |
+					<gis gis,>1)											|
 
 }
 
