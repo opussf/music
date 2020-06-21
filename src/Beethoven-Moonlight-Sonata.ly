@@ -167,93 +167,94 @@
 	% Bar 32
 	s1	|
 	s1	|
-	s1	|
+					<gis gis,>1											|
 
 	% Bar 33
 	s1	|
 	s1	|
-	s1	|
+					<gis gis,>1											|
 
 	% Bar 34
 	s1	|
 	s1	|
-	s1	|
+					<gis gis,>1											|
 
 	% Bar 35
 	s1	|
 	s1	|
-	s1	|
+					<gis gis,>1(										|
 
 	% Bar 36
 	s1	|
 	s1	|
-	s1	|
+					<gis gis,>1)(										|
 
 	% Bar 37
 	s1	|
 	s1	|
-	s1	|
+					<gis gis,>1)										|
 
 	% Bar 38
 	s1	|
 	s1	|
-	s1	|
+					<gis gis,>1											|
 
 	% Bar 39
 	s1	|
 	s1	|
-	s1	|
+					<gis gis,>1											|
 
 	% Bar 40
 	s1	|
 	s1	|
-	s1	|
+					<gis gis,>2(					<a a,>2				|
 
 	% Bar 41
 	s1	|
 	s1	|
-	s1	|
+					<fis fis,>2						<gis gis,>2			|
 
 	% Bar 42
 	s1	|
 	s1	|
-	s1	|
+					<cis gis cis,>1)									|
 
 	% Bar 43
 	s1	|
 	s1	|
-	s1	|
+					<bis gis bis,>1										|
 
 	% Bar 44
 	s1	|
 	s1	|
-	s1	|
+					<cis cis,>2(					<fis, fis,>2			|
 
 	% Bar 45
 	s1	|
 	s1	|
-	s1	|
+					<b b,>2							<b b,>2					|
 
 	% Bar 46
 	s1	|
 	s1	|
-	s1	|
+					<e e,>1)												|
 
 	% Bar 47
 	s1	|
 	s1	|
-	s1	|
+					<dis dis,>1												|
 
 	% Bar 48
 	s1	|
 	s1	|
-	s1	|
+					<e e,>2(						<dis dis,>4	<cis cis,>4	|
 
 	% Bar 49
 	s1	|
 	s1	|
-	s1	|
+					<bis gis bis,>2					<cis gis cis,>2			|
 
+	% Page 3
 	% Bar 50
 	s1	|
 	s1	|
@@ -355,10 +356,14 @@
 	s1	|
 
 	% Bar 70
-	s1	|
-	s1	|
-	s1	|
+	\key des \major	\\ \time 3/4 \\ \stemNeutral \partial 4 <des' aes>4(	|
+	\key des \major	\\ \time 3/4 \\ \stemNeutral \partial 4 s4	|
+	\key des \major	\\ \time 3/4 \\ \stemNeutral \partial 4 f''4(	|
 
+	% Bar 71
+	<c aes>2	<bes g>4	|
+	s2.						|
+	ees2 		des4		|
 }
 
 \score {
