@@ -9,10 +9,10 @@
 \parallelMusic #'(voiceAA voiceAB voiceBA) {
 	% Bar 1
 	\key e \major  	 s1 																				|
-  	\key e \major 	 \tuplet 3/2 4 { gis8(\pp cis e) 	gis,( cis e) 	gis,( cis e) 	gis,( cis e) }  |
-  	\key e \major 	 				<cis cis,>1\pp( 													|
+	\key e \major 	 \tuplet 3/2 4 { gis8(\pp cis e) 	gis,( cis e) 	gis,( cis e) 	gis,( cis e) }  |
+	\key e \major 	 				<cis cis,>1\pp( 													|
 
-  	% Bar 2
+	% Bar 2
 	s1 |
 	\tuplet 3/2 4 { gis,8( cis e) 	gis,( cis e) 	gis,( cis e) 	gis,( cis e) }  |
 	 				<b b,>1															|
@@ -94,7 +94,7 @@
 					<b b,>1(														|
 
 	% Bar 18
-					c2.->								ais4^(		|
+					c2.->								ais4		|
 	\tuplet 3/2 4 {	b,8( e g)	b,( e g)	b,( e g)	b,( e g) }	|
 					<b b,>4)\<	<e e,>(\!	<g g,>\>	<e e,>\!	|
 
@@ -151,107 +151,107 @@
 	% Bar 29
 					r4				gis,^(			a				fis				|
 	\tuplet 3/2 4 { r8( bis dis)	gis,( bis dis)	a( bis dis) 	fis,( bis dis)}	|
-					<gis gis,>1)													|
+					<gis gis,>1														|
 
 	% Bar 30
 					e4)				cis''^(			e			cis)			|
 	\tuplet 3/2 4 {	e,8( e' gis)	cis( e, gis)	e'( e, gis)	cis( e, gis) }	|
-					<gis gis,>1)												|
+					<gis gis,>1													|
 
 	% Bar 31
 					r4			cis,^(			e			cis)			|
-	\tuplet 3/2 4 {	r8( e, gis)	cis( e, gis)	e'( e, gis)	cis( e, gis) }	|
-					<gis gis,>1)											|
+	\tuplet 3/2 4 {	r8 e,( gis)	cis( e, gis)	e'( e, gis)	cis( e, gis) }	|
+					<gis gis,>1												|
 
 	% Page 3
 	% Bar 32
 	s1	|
-	s1	|
-					<gis gis,>1											|
+	\tuplet 3/2 4 {	dis8( a' fis	bis a dis	bis! fis' dis	a' fis bis) }	|
+					<gis gis,>1													|
 
 	% Bar 33
 	s1	|
-	s1	|
-					<gis gis,>1											|
+	\tuplet 3/2 4 {	e,,8( cis' gis	e' cis gis'	e cis' gis	e' cis gis) }	|
+					<gis gis,>1												|
 
 	% Bar 34
 	s1	|
-	s1	|
-					<gis gis,>1											|
+	\tuplet 3/2 4 {	cis,8( fisis e	ais fisis cis'	ais e' cis	fisis e ais) }	|
+					<gis gis,>1													|
 
 	% Bar 35
 	s1	|
-	s1	|
+	\tuplet 3/2 4 {	fis,!8( bis a!	dis bis fis'	dis a' fis	bis a dis) }	|
 					<gis gis,>1(										|
 
 	% Bar 36
 	s1	|
-	s1	|
+	\tuplet 3/2 4 {	bis8( e a d e bis d a bis fis a dis) }	|
 					<gis gis,>1)(										|
 
 	% Bar 37
 	s1	|
-	s1	|
+	\tuplet 3/2 4 {	fis8( bis d)}	|
 					<gis gis,>1)										|
 
 	% Bar 38
 	s1	|
-	s1	|
+	\tuplet 3/2 4 {	}	|
 					<gis gis,>1											|
 
 	% Bar 39
 	s1	|
-	s1	|
+	\tuplet 3/2 4 {	}	|
 					<gis gis,>1											|
 
 	% Bar 40
 	s1	|
-	s1	|
+	\tuplet 3/2 4 {	}	|
 					<gis gis,>2(					<a a,>2				|
 
 	% Bar 41
 	s1	|
-	s1	|
+	\tuplet 3/2 4 {	}	|
 					<fis fis,>2						<gis gis,>2			|
 
 	% Bar 42
 	s1	|
-	s1	|
+	\tuplet 3/2 4 {	}	|
 					<cis gis cis,>1)									|
 
 	% Bar 43
 	s1	|
-	s1	|
+	\tuplet 3/2 4 {	}	|
 					<bis gis bis,>1										|
 
 	% Bar 44
 	s1	|
-	s1	|
+	\tuplet 3/2 4 {	}	|
 					<cis cis,>2(					<fis, fis,>2			|
 
 	% Bar 45
 	s1	|
-	s1	|
+	\tuplet 3/2 4 {	}	|
 					<b b,>2							<b b,>2					|
 
 	% Bar 46
 	s1	|
-	s1	|
+	\tuplet 3/2 4 {	}	|
 					<e e,>1)												|
 
 	% Bar 47
 	s1	|
-	s1	|
+	\tuplet 3/2 4 {	}	|
 					<dis dis,>1												|
 
 	% Bar 48
 	s1	|
-	s1	|
+	\tuplet 3/2 4 {	}	|
 					<e e,>2(						<dis dis,>4	<cis cis,>4	|
 
 	% Bar 49
 	s1	|
-	s1	|
+	\tuplet 3/2 4 {	}	|
 					<bis gis bis,>2					<cis gis cis,>2			|
 
 	% Page 3
