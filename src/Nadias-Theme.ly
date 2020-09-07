@@ -155,7 +155,7 @@
 
 	% Bar 27 (12)
 	<fis' g>4\mp	<fis g>		<e g>		<e g> |
-	b1^~ |
+	b1^~	\stemUp |
 	e2.										r8 b8 |
 
 	% Bar 4
