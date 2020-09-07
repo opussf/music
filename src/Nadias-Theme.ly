@@ -38,22 +38,22 @@
 	e2.										r8 b8 |
 
 	% Bar 4
-	<fis g>4	<fis g>	\stemUp<e g>8	b 	e	b' 	|
-	\stemUp b2^~					b8		s4.		|   % fix the flag?
-	e2.										e4		|
+	<fis g>4	<fis g>			s2						|
+	\stemUp b2^~				<e, g b>8	b	e	b'	|
+	e2.											e4		|
 
 	% Bar 5
-	\stemDown <e, fis>4		<e fis>		<d fis>		<d fis>	|
+	<e fis>4		<e fis>		<d fis>		<d fis>	|
 	a1^~ 											|
 	d2.										r8 a8	|
 
 	% Bar 6
-	<e fis>4		<e fis>	\stemUp<d fis>8	a 	d	a' 	|
-	\stemUp a2^~				a8		s4.			|   % fix the flag?
+	<e fis>4		<e fis>	s2						|
+	a2^~			<d, fis a>8	a	d	a'	|
 	d2.										d4		|
 
 	% Bar 7
-	\stemDown<d, e>4			<d e>		<c e>		<c e>	|
+	<d e>4			<d e>		<c e>		<c e>	|
 	g2.										a4		|
 	c1												|
 
@@ -78,40 +78,40 @@
 	e2.										r8	b8	|
 
 	% Bar 12
-	<fis g>4		<fis g>	\stemUp	<e g>8	b 	e 	b'	|
-	b2							b8 		s4.			|
+	<fis g>4		<fis g>	s2						|
+	b2^~					<e, g b>8	b	e	b'	|
 	e2.										e4		|
 
 	% Bar 13
-	<e, fis>4		<e fis>		<d fis>		<d fis>	|
+	<e fis>4		<e fis>		<d fis>		<d fis>	|
 	a1^~ 											|
 	d2.										r8 a8	|
 
 	% Bar 14
-	<e fis>4		<e fis>		<d fis>8	a 	d	a' 	|
-	\stemUp a2^~				a8		s4.			|   % fix the flag?
+	<e fis>4		<e fis>	s2				 		|
+	a2^~					<d, fis a>8	a	d	a'	|
 	d2.										d4		|
 
 	% Bar 15
-	<d, e>4			<d e>		<c e>		<c e>	|
+	<d e>4			<d e>		<c e>		<c e>	|
 	g2.										a4		|
 	c1												|
 
 	% Page 2
-	% Bar 16
+	% Bar 16 (1)
 	<d e>4			<d e>		<c e>		<c e>	|
 	b2.										g4		|
 	c1 |
 
-	% Bar 17
+	% Bar 17 (2)
 	<cis d>4		<cis d>		<b d>		<b d>	|
 	fis1^~ |
 	b2.										r8 b8	|
 
-	% Bar 18
-	<cis d>4\<		<cis d>		<b d>8	fis'	a	d,	|
-	fis2^~					fis8 	s4.			|
-	b2.										b4		|
+	% Bar 18 (3)
+	<cis d>4\<		<cis d>	s2							|
+	fis2^~					<b, d fis>8	fis'	a	d,	|
+	b2.											b4		|
 
 	% Bar 19 (4)
 	<b cis>4\mf 	<b cis>4	<a cis>4	<a cis>4	|
@@ -119,22 +119,22 @@
 	a2.										r8 	a 		|
 
 	% Bar 20 (5)
-	<b cis>4		<b cis>		<a cis>8	e'8	a	e	|
-	s2^~						e8			s4.			|
-	a2.											a4		|
+	<b cis>4		<b cis>	s2						|
+	e2^~					<a, cis e>8	e'8	a	e	|
+	a2.										a4		|
 
 	% Bar 21 (6)
-	\stemDown<a, e'>4		<a e'>		<a d>		<a d>	|
+	<a e'>4			<a e'>		<a d>		<a d>	|
 	fis1^~	|
-	d2.												r8 d8	|
+	d2.										r8 d8	|
 
 	% Bar 22 (7)
-	<a e'>4			<a e'>	\stemUp	<a d>8-. a'8[	d a]	|
-	fis2^~							fis8-.	s4.				|
-	d2.					 							fis4	|
+	<a e'>4			<a e'>	s2												|
+	fis2^~					<a, d fis>8-.	\stemNeutral	a'8[	d	a]	|
+	d2.					 											fis4	|
 
 	% Bar 23 (8)
-	b8	a			a	g		g4.					b8	|
+	b'8	a			a	g		g4.					b8	|
 	s1 |
 	<g b>2.									<g b>4		|
 
@@ -154,43 +154,43 @@
 	g4.		g8	g4		fis |
 
 	% Bar 27 (12)
-	\stemDown <fis' g>4\mp	<fis g>		<e g>		<e g> |
+	<fis' g>4\mp	<fis g>		<e g>		<e g> |
 	b1^~ |
 	e2.										r8 b8 |
 
 	% Bar 4
 	% Bar 28 (13)
-	<fis g>4	<fis g>	\stemUp<e g>8	b 	e	b' 	|
-	\stemUp b2^~					b8		s4.		|   % fix the flag?
-	e2.										e4		|
+	<fis g>4	<fis g>	s2						|
+	b2^~				<e, g b>8	b	e	b'	|
+	e2.									e4		|
 
 	% Bar 5
 	% Bar 29 (14)
-	<e, fis>4		<e fis>		<d fis>		<d fis>	|
+	<e fis>4		<e fis>		<d fis>		<d fis>	|
 	a1^~ 											|
 	d2.										r8 a8	|
 
 	% Bar 6
 	% Bar 30 (15)
-	<e fis>4		<e fis>		<d fis>8	a 	d	a' 	|
-	\stemUp a2^~				a8		s4.			|   % fix the flag?
-	d2.										d4		|
+	<e fis>4		<e fis>		s2						|
+	a2^~						<d, fis a>8	a	d	a'	|
+	d2.											d4		|
 
 	% Bar 7
 	% Bar 31 (16)
-	<d, e>4			<d e>		<c e>		<c e>	|
+	<d e>4			<d e>		<c e>		<c e>	|
 	g1^~	|
 	c2.										r8	c8	|
 
 	% Bar 8
 	% Bar 32 (17)
-	<d e>4			<d e>		<c e>8	a'	b	g	|
-	g2^~						g8			s4.		|
-	c2. 									c4		|
+	<d e>4			<d e>		s2						|
+	g2^~						<c, e g>8	a'	b	g	|
+	c2. 										c4		|
 
 	% Bar 9
 	% Bar 33 (18)
-	<cis, d>4		<cis d>		<b d>		<b d>	|
+	<cis d>4		<cis d>		<b d>		<b d>	|
 	fis1^~ |
 	b2.										r8	b8	|
 
