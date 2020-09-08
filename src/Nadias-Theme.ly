@@ -215,7 +215,7 @@
 			\new Staff {
 				<<
 					% ignore = \override NoteColumn #'ignore-collision = ##t
-					\tempo "Slowly, With A Beat"
+					\tempo "Slowly, With A Beat" 4=80
 					\relative c' \voiceAA
 					\relative c' \voiceAB
 				>>
