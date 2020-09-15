@@ -1,4 +1,5 @@
 \version "2.18.2"
+date = #(strftime "%d %b %Y" (localtime (current-time)))
 \header {
 	title = "Nadia's Theme"
 	subtitle = "(The Young And The Restless)"
@@ -13,7 +14,9 @@
 		\line { "This arrangement Copyright " \char ##x00A9 " 1976 by Screen Gems-EMI Music Inc.   Used by Permission" }
 		\line { "International Copyright Secured       Made in U.S.A.      All Rights Reserved" }
 	}
-	tagline = "version: @VERSION@"
+	tagline = \markup {
+		\line { \date " version: @VERSION@" }
+	}
 }
 
 \parallelMusic #'(voiceAA voiceAB voiceBA) {
