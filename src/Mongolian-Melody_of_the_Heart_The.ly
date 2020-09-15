@@ -1,18 +1,21 @@
 \version "2.20.0"
+date = #(strftime "%d %b %Y" (localtime (current-time)))
 \header {
-  copyright = "version: @VERSION@"
-  title = "title"
-  subtitle = "subtitle"
-  composer = "composer"
-  arranger = "arranger"
-  instrument = "instrument"
-  metre = "metre"
-  opus = "opus"
-  piece = "piece"
-  poet = "poet"
-  texidoc = "All header fields with special meanings."
-  enteredby = "jcn"
-  source = "urtext"
+	title = "title"
+	subtitle = "subtitle"
+	composer = "composer"
+	arranger = "arranger"
+	instrument = "instrument"
+	metre = "metre"
+	opus = "opus"
+	piece = "piece"
+	poet = "poet"
+	texidoc = "All header fields with special meanings."
+	enteredby = "jcn"
+	source = "urtext"
+	tagline = \markup {
+		\line { \date " version: @VERSION@" }
+	}
 }
 
 upper_one = \relative c'' {
