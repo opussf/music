@@ -1,8 +1,11 @@
 \version "2.19.0"
+date = #(strftime "%d %b %Y" (localtime (current-time)))
 \header {
-	copyright = "version: @VERSION@"
 	title = "Canon"
 	composer = "Johann Pachelbel (1653-1706)"
+	tagline = \markup {
+		\line { \date " version: @VERSION@" }
+	}
 }
 
 global = {
