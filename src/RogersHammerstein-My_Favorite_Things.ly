@@ -1,4 +1,5 @@
 \version "2.18.2"
+date = #(strftime "%d %b %Y" (localtime (current-time)))
 \header {
 	title = "My Favorite Things"
 	subtitle = "from THE SOUND OF MUSIC"
@@ -6,6 +7,9 @@
 	poet = "Lyrics by Oscar Hammerstein II"
 	arranger = "Arranged by Robert Buckley"
 	copyright = "Too blurry to read"
+	tagline = \markup {
+		\line { \date " version: @VERSION@" }
+	}
 }
 
 flute = \new Staff {
