@@ -1,9 +1,13 @@
 \version "2.18.2"
+date = #(strftime "%d %b %Y" (localtime (current-time)))
 \header {
 	title = "Song From a Secret Garden"
 	composer = "Rolf Løvland"
 	arranger = "Arr: Raif Husicic (piano)"
 	subtitle = "From https://www.youtube.com/watch?v=B1PBluFYKco"
+	tagline = \markup {
+		\line { \date " version: @VERSION@" }
+	}
 }
 
 flute = \new Staff {
