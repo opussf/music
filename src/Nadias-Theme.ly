@@ -1,18 +1,19 @@
 \version "2.18.2"
 \header {
 	title = "Nadia's Theme"
+	subtitle = "(The Young And The Restless)"
+	subsubtitle = "A Screen Gems T.V. Serial"
 	composer = \markup {
 		\line { "By" }
 		\line { "BARRY DE VORZON and " }
 		\line { "PERRY BOTKIN Jr." }
 	}
-	copyright = "version: @VERSION@"
-%	copyright = \markup \left-align \center-column {
-%		\line { "Copyright 1937 by RADIO TRANSCRIPTION CO. OF AMERICA LTD." }
-%		\line { "1509 No. Vine St. Hollywood, Calif." }
-%		\line { "All Rights Reserved Including The Right Of Public Performance For Profit" }
-%		\line { "International Copyright Secured" }
-%	}
+	copyright = \markup \left-align \center-column {
+		\line { "Copyright " \char ##x00A9 " 1971, 1973 by Screen Gems-EMI Music Inc., Hollywood, Calif" }
+		\line { "This arrangement Copyright " \char ##x00A9 " 1976 by Screen Gems-EMI Music Inc.   Used by Permission" }
+		\line { "International Copyright Secured       Made in U.S.A.      All Rights Reserved" }
+	}
+	tagline = "version: @VERSION@"
 }
 
 \parallelMusic #'(voiceAA voiceAB voiceBA) {
@@ -48,9 +49,9 @@
 	d2.										r8 a8	|
 
 	% Bar 6
-	<e fis>4		<e fis>	s2						|
-	a2^~			<d, fis a>8	a	d	a'	|
-	d2.										d4		|
+	<e fis>4		<e fis>	s2					|
+	a2^~			<d, fis a>8		a	d	a'	|
+	d2.									d4		|
 
 	% Bar 7
 	<d e>4			<d e>		<c e>		<c e>	|
