@@ -1,7 +1,7 @@
 \version "2.18.2"
 date = #(strftime "%d %b %Y" (localtime (current-time)))
 \header {
-	title = "ONE TIN SOLDER"
+	title = "ONE TIN SOLDIER"
 	composer = \markup {
 		\line { "Words and Music by" }
 		\line { "DENNIS LAMBERT" }
