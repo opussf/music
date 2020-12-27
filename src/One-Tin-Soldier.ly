@@ -78,7 +78,7 @@ date = #(strftime "%d %b %Y" (localtime (current-time)))
 	bes8 <d bes> <d bes>4 <f bes,> <f bes,>|
 	g4. g8 c4 c8 c8 |
 
-	%\pageBreak
+	\pageBreak
 	% Page 2
 	% Bar 11
 	a8 c16 c c8 a g c16 c c g8. |
@@ -123,6 +123,7 @@ date = #(strftime "%d %b %Y" (localtime (current-time)))
 	<a c>4 <a c>4 a8. <e a>16~ <e a>4|
 	f,4. f8 a4 a |
 
+	\pageBreak
 	% Page 3
 	% Bar 19 (4)
 	d16 c d c d8 c16 c~ c4 r8. c16 |
