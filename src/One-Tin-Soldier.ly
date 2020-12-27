@@ -63,7 +63,7 @@ date = #(strftime "%d %b %Y" (localtime (current-time)))
 				f4.        f8 e4.          e8 |
 
 	% Bar 8
-	f8 a a16 f8. f8[ a16 a~ a4] |
+	f8 a a16 f8. f8[ a16 a~] a4 |
 	d4   d       d8.     <f d>16~ <f d>4 |
 	d4.         d8 c4.   c8 |
 	\break
@@ -123,11 +123,10 @@ date = #(strftime "%d %b %Y" (localtime (current-time)))
 	<a c>4 <a c>4 a8. <e a>16~ <e a>4|
 	f,4. f8 a4 a |
 
-	\pageBreak
 	% Page 3
 	% Bar 19 (4)
 	d16 c d c d8 c16 c~ c4 r8. c16 |
-	<f bes>4 <f bes>8. <f a>16( <f a>4 <f a>4 |
+	<f bes>4 <f bes>8. <f a>16~ <f a>4 <f a>4 |
 	bes4. bes8 f4 f8 c' |
 
 	% Bar 20 (5)
@@ -152,7 +151,7 @@ date = #(strftime "%d %b %Y" (localtime (current-time)))
 
 	% Bar 24 (9)
 	\time 2/4
-	a16( g) f8 f f16 f( |
+	a16( g) f8 f f16 f~ |
 	<bes, d>2 |
 	c2) |
 	} % repeat
@@ -163,7 +162,7 @@ date = #(strftime "%d %b %Y" (localtime (current-time)))
 	% Bar 25 (10)
 	% @TODO: Move these
 	\time 4/4
-	f1) |
+	f1 |
 	r4 <c a'>4 <d bes'>8 <d bes'>4. |
 	f,4. f8 bes4 bes |
 
@@ -176,12 +175,12 @@ date = #(strftime "%d %b %Y" (localtime (current-time)))
 	{ % 3
 	% Bar 27 (12)
 	% repeat 3
-	f1 |
+	f1~ |
 	r4 <c a'>4 <d bes'>8 <d bes'>4. |
 	f4. f8 bes4 bes |
 
 	% Bar 28 (13)
-	f1)\fermata |
+	f1\fermata |
 	r4 <c a'>8 <c a'> <d bes'>16 <d bes'>8. <c a'>4\fermata |
 	f4. f8 bes4 f\fermata |
 	}
@@ -210,5 +209,27 @@ date = #(strftime "%d %b %Y" (localtime (current-time)))
 		>>
 	>>
 	\layout { }
+}
+\score {
+	\unfoldRepeats
+	<<
+		\new PianoStaff \with { instrumentName = "Piano" }
+		<<
+
+			\new Staff {
+				<<
+					% ignore = \override NoteColumn #'ignore-collision = ##t
+					\tempo "Moderatly Slow Rock Tempo" 4=85
+					\relative c' \voiceAA
+					\relative c' \voiceAB
+				>>
+			}
+			\new Staff {
+				<<
+					\relative c \voiceBA
+				>>
+			}
+		>>
+	>>
 	\midi { }
 }
