@@ -1,4 +1,5 @@
 \version "2.18.2"
+\include "predefined-guitar-fretboards.ly"
 date = #(strftime "%d %b %Y" (localtime (current-time)))
 \header {
 	title = "ONE TIN SOLDIER"
@@ -16,6 +17,7 @@ date = #(strftime "%d %b %Y" (localtime (current-time)))
 	}
 }
 
+% piano
 \parallelMusic #'(voiceAA voiceAB voiceBA) {
 
 	% keys
@@ -55,6 +57,7 @@ date = #(strftime "%d %b %Y" (localtime (current-time)))
 	\break
 
 	% Bar 7
+	\repeat volta 3 {
 	\stemUp 	a16 c8. c8 a  g c 	c16 g8.   |
 	\stemDown 	f4      a8 f  <e c>4 <e c>    |
 				f4.        f8 e4.          e8 |
@@ -75,65 +78,114 @@ date = #(strftime "%d %b %Y" (localtime (current-time)))
 	bes8 <d bes> <d bes>4 <f bes,> <f bes,>|
 	g4. g8 c4 c8 c8 |
 
+	%\pageBreak
+	% Page 2
 	% Bar 11
+	a8 c16 c c8 a g c16 c c g8. |
+	f4       a8 f <e c>4  <e c>4 |
+	f4.         f8 e4.      e8  |
 
 	% Bar 12
+	f8 a a  f16 f16~ f8 a16 a~ a4 |
+	d4   d8.    d16~ d8 <f d>4.   |
+	d4.     d8  c4.               c8 |
 
 	% Bar 13
+	d,8 f16 f~ f8 d c16 f8 f16~ f8. c16 |
+	bes,8 <d bes>4 bes8 a16 <c a>8.~ <c a>4 |  %typo on the page?
+	bes4. bes8 f4. f8 |
 
 	% Bar 14
+	\time 3/4
+	d16 f8 f16~ f8 a8 g[ f] |
+	bes8. <d bes>16 <d bes>4 <d bes>|
+	g4. g8 c[ c] |
 
 	% Bar 15
+	\time 4/4
+	r4 <c a'>8 <c a'> <d bes'> <c a'>4. |
+	f1 |
+	f,4. f8 bes f4. |
 
-	% Page 2
-	% Bar 16 (1)
+	\bar "||"
+	% Bar 16
+	f'16 f f g f8 f8 e16( d c8) c4 |
+	<a c>4 <a c>8 <a c> c a <e a>4 |
+	f4. f8 a4 a |
 
 	% Bar 17 (2)
+	d16 c d c d c c c~ c2 |
+	<f bes>4 <f bes>8. <f a>16~ <f a>2 |
+	bes4. bes8 f4 f8 c' |
 
 	% Bar 18 (3)
+	f16 f f f f g8. e16 d c c~ c4 |
+	<a c>4 <a c>4 a8. <e a>16~ <e a>4|
+	f,4. f8 a4 a |
 
+	\pageBreak
+	% Page 3
 	% Bar 19 (4)
+	d16 c d c d8 c16 c~ c4 r8. c16 |
+	<f bes>4 <f bes>8. <f a>16( <f a>4 <f a>4 |
+	bes4. bes8 f4 f8 c' |
 
 	% Bar 20 (5)
+	f16 f f f f g8. e16 d c8~ c4 |
+	<a c>4 <a c> <a c>8 <e a>~ <a e>4 |
+	f,4. f8 a4 a |
 
 	% Bar 21 (6)
+	d8 d16 c~ c8 bes c4 r8 f,16 f |
+	<f bes>8. <d f>16~ <d f>8 <d f> <f a>4 <a, c> |
+	bes4. bes8 f4 f8 c' |
 
 	% Bar 22 (7)
+	a16 c8. c8 c d f4.~ |
+	f'4 <f a>8 <f a> <f bes> <bes d>4.~ |
+	f,4. f8 bes4 bes8 f |
 
 	% Bar 23 (8)
+	f2 r4 f,8 f |
+	<bes d>2. r4 |
+	bes1( |
 
 	% Bar 24 (9)
+	\time 2/4
+	a16( g) f8 f f16 f( |
+	<bes, d>2 |
+	c2) |
+	} % repeat
 
+	\alternative {
+
+	{ % 1 and 2
 	% Bar 25 (10)
+	% @TODO: Move these
+	\time 4/4
+	f1) |
+	r4 <c a'>4 <d bes'>8 <d bes'>4. |
+	f,4. f8 bes4 bes |
 
 	% Bar 26 (11)
+	r4 <c f a>8 <c f a> <d f bes>16 <d f bes>8. <c f a>4 |
+	s1 |
+	f4. f8 bes4 f |
+	}
 
+	{ % 3
 	% Bar 27 (12)
+	% repeat 3
+	f1 |
+	r4 <c a'>4 <d bes'>8 <d bes'>4. |
+	f4. f8 bes4 bes |
 
-	% Bar 4
 	% Bar 28 (13)
-
-	% Bar 5
-	% Bar 29 (14)
-
-	% Bar 6
-	% Bar 30 (15)
-
-	% Bar 7
-	% Bar 31 (16)
-
-	% Bar 8
-	% Bar 32 (17)
-
-	% Bar 9
-	% Bar 33 (18)
-
-	% Bar 10
-	% Bar 34 (19)
-
-	% Bar 11
-	% Bar 35 (20)
-
+	f1)\fermata |
+	r4 <c a'>8 <c a'> <d bes'>16 <d bes'>8. <c a'>4\fermata |
+	f4. f8 bes4 f\fermata |
+	}
+	} % alternate
 
 }
 
@@ -141,6 +193,7 @@ date = #(strftime "%d %b %Y" (localtime (current-time)))
 	<<
 		\new PianoStaff \with { instrumentName = "Piano" }
 		<<
+
 			\new Staff {
 				<<
 					% ignore = \override NoteColumn #'ignore-collision = ##t
