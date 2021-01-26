@@ -1,7 +1,11 @@
 \version "2.18.2"
+date = #(strftime "%d %b %Y" (localtime (current-time)))
 \header {
 	title = "Development of Reading"
 	subsubtitle="Rubank Elementary  Lesson 27-1"
+	tagline = \markup {
+		\line { \date " version: @VERSION@" }
+	}
 }
 
 flute_a = \new Staff {
