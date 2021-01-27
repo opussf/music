@@ -14,7 +14,7 @@ flute_a = \new Staff {
 		\clef treble
 		\key g \major
 		\time 4/4
-		\tempo "" 4 = 100
+		\tempo "" 4 = 50
 
 		g8  g4 a8 b b4 g8 | fis a c e d2 | b8  b4 c8 d g,4 b8 | c  b  a  g  a4. d,8 | \break
 		g8  g4 a8 b b4 g8 | fis a c e d2 | g8  e4 e8 e d4  c8 | b[ b] a[ a] g2      | \break
