@@ -13,10 +13,9 @@ flute_a = \new Staff {
 		\clef treble
 		\key g \major
 		\time 3/4
-		\tempo "" 4 = 50
 
 		g4( g' g,) | a( a' a,) | b( b' b,) | c( c' c,) | d( d' d,) \breathe | e( e' e,) | fis( fis' fis,) | g( g' g,) | \break
-		g( g' g,) | fis( fis' fis,) | e( e' e,) | d( d' d,) | c( c' c,) | b( b' b,) | a( a' a,) | g( g' g,) | \break
+		g4( g' g,) | fis( fis' fis,) | e( e' e,) | d( d' d,) \breathe | c( c' c,) | b( b' b,) | a( a' a,) | g( g' g,) | \break
 
 
 		\bar "|."
