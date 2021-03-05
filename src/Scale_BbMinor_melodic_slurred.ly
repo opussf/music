@@ -11,26 +11,26 @@ flute_a = \new Staff {
 	\set Staff.midiInstrument = #"flute"
 	\relative c'' {
 		\clef treble
-		\key b \minor
+		\key bes \minor
 		\time 3/4
 
-		b( b' b,) |
-		cis( cis' cis,) |
-		d( d' d,) |
-		e( e' e,) |
-		fis( fis' fis,) |
-		gis( gis' gis,) |
-		ais( ais' ais,) |
-		b( b' b,) | \break
+		bes( bes' bes,) |
+		c( c' c,) |
+		des( des' des,) |
+		ees( ees' ees,) |
+		f( f' f,) |
+		g( g' g,) |
+		a( a' a,) |
+		bes( bes' bes,) | \break
 
-		b( b' b,) |
-		a!( a'! a,!) |
-		g!( g'! g,!) |
-		fis( fis' fis,) |
-		e( e' e,) |
-		d( d' d,) |
-		cis( cis' cis,) |
-		b( b' b,) | \break
+		bes( bes' bes,) |
+		aes( aes' aes,) |
+		ges( ges' ges,) |
+		f( f' f,) |
+		ees( ees' ees,) |
+		des( des' des,) |
+		c( c' c,) |
+		bes( bes' bes,) | \break
 
 		\bar "|."
 	}
