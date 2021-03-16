@@ -19,12 +19,12 @@ flute_a = \new Staff {
 		des( des' des,) |
 		ees( ees' ees,) |
 		f( f' f,) |
-		g( g' g,) |
+		ges( ges' ges,) |
 		a( a' a,) |
 		bes( bes' bes,) | \break
 
 		bes( bes' bes,) |
-		aes( aes' aes,) |
+		a( a' a,) |
 		ges( ges' ges,) |
 		f( f' f,) |
 		ees( ees' ees,) |
