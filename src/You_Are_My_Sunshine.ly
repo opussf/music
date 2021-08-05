@@ -47,6 +47,7 @@ guitar = \chordmode {
 }
 
 verse_one = \lyricmode {
+	The ot- her
 
 	I'm the | cinn- a- mon bear with the |
 	shoe but- ton eyes  And I'm |
