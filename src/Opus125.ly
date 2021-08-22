@@ -23,7 +23,7 @@ flute = \new Staff {
 			c,8( d16 e f g a b) c-.( d-. e-. f-. g-. a-. b-. c-. |
 			d-. e-. f-. g-.) a4.\> a,,8( e' d\!) |
 			a'8.->(\p \tuplet 3/2 { g32 e c) } g2( \grace { a32 g fis g } a8 g) |
-			a'->( g32\< f d b) g4. f8 e d |  
+			a'->( g32\< f d b) g4.\! f8 e d |
 			
 			\bar "||"
 
