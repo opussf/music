@@ -24,6 +24,9 @@ Gb Major	Gb	Ab	Bb	Cb	Db	Eb	F	Gb
 Cb Major	Cb	Db	Eb	Fb	Gb	Ab	Bb	Cb
 
 
+Bb Minor
+
+
 
 Chord Formula
 
