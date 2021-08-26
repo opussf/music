@@ -1,7 +1,11 @@
 \version "2.18.2"
+date = #(strftime "%d %b %Y" (localtime (current-time)))
 \header {
 	title = "The Wellerman"
 	composer = "Traditional, arr. Marco De Boni"
+	tagline = \markup {
+		\line { \date " version: @VERSION@" }
+	}
 }
 
 flute = \new Staff {
